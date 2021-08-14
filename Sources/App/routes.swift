@@ -3,12 +3,7 @@ import Vapor
 
 func routes(_ app: Application) throws {
     app.get { req in
-        return req.view.render("index", ["title": "Hello Vapor!"])
+        return req.view.render("index")
     }
-
-    app.get("hello") { req -> String in
-        return "Hello, world!"
-    }
-
-    try app.register(collection: TodoController())
+    app.get("**") {$0.view.render("index")}
 }
