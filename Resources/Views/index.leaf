@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1,minimum-scale=1, minimal-ui" />
+              <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1,minimum-scale=1, minimal-ui" />
+
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 			
 		<meta property="og:title" content="BuLa 2023" />
@@ -63,6 +64,7 @@
 			background-color: hsl(35, 35%, 70%);
 			font-size: 15pt;
 			color: white;
+			position: fixed;
 		}
 		.kelptB {
 			font-family: 'Barlow Condensed', sans-serif;
@@ -95,7 +97,7 @@
 			line-height: 4rem;
 		}
 		#background {
-			position: absolute;
+			position: fixed;
 			width: 100vw;
 			height: 100vh;
 			object-fit: cover;
@@ -104,13 +106,13 @@
 			z-index: 0;
 		}
 		#backgroundGradient {
-			position: absolute;
+			position: fixed;
 			width: 100vw;
 			height: 100vh;
 			background: linear-gradient(to top, hsla(208, 100%, 33%, 100%), hsla(208, 100%, 33%, 0) 20rem);
 		}
 		#text {
-			position: absolute;
+			position: fixed;
 			left: 1.5rem;
 			bottom: 1.5rem;
 			width: calc(100vw - 3rem);
@@ -130,7 +132,7 @@
 			bottom: .45rem;
 		}
 		#gjw {
-			position: absolute;
+			position: fixed;
 			right: 1.25rem;
 			top: 1.25rem;
 		}
