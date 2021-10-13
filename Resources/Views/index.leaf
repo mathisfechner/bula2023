@@ -4,7 +4,8 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1,minimum-scale=1, minimal-ui" />
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-			
+        
+        <link rel="icon" type="image/png" href="/favicon.png">
 		<meta property="og:title" content="BuLa 2023" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="https://???"/>
@@ -13,7 +14,6 @@
 		<meta property="og:image:height" content="300" />
 		<meta property="og:image:alt" content="BuLa Logo" />
 		
-		<link rel="apple-touch-icon" sizes="180x180" href="/???">
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -21,7 +21,8 @@
     </head>
     	
 	<body>
-		<img id="background" src="/background.jpg">
+		<img class="background" id="bgPortrait" src="/bgPortrait.jpg">
+		<img class="background" id="bgLandscape" src="/bgLandscape.jpg">
 		<div id="backgroundGradient"></div>
 		
 		<a href="https://www.gjw.de" target="_blank">
@@ -58,7 +59,61 @@
 	</body>
         
     <style>
-		@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Open+Sans:wght@400;700&display=swap');
+		@font-face {
+		  font-family: 'Barlow Condensed';
+		  font-style: normal;
+		  font-weight: 700;
+		  font-display: swap;
+		  src: url(/barlow700ext.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		}
+		@font-face {
+		  font-family: 'Barlow Condensed';
+		  font-style: normal;
+		  font-weight: 700;
+		  font-display: swap;
+		  src: url(/barlow700.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+		@font-face {
+		  font-family: 'Open Sans';
+		  font-style: normal;
+		  font-weight: 400;
+		  font-stretch: 100%;
+		  font-display: swap;
+		  src: url(/opensans400ext.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		}
+		@font-face {
+		  font-family: 'Open Sans';
+		  font-style: normal;
+		  font-weight: 400;
+		  font-stretch: 100%;
+		  font-display: swap;
+		  src: url(/opensans400.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+
+		@font-face {
+		  font-family: 'Open Sans';
+		  font-style: normal;
+		  font-weight: 700;
+		  font-stretch: 100%;
+		  font-display: swap;
+		  src: url(/opensans700ext.woff) format('woff');
+		  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		}
+		@font-face {
+		  font-family: 'Open Sans';
+		  font-style: normal;
+		  font-weight: 700;
+		  font-stretch: 100%;
+		  font-display: swap;
+		  src: url(/opensans700.woff) format('woff');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+
+		
 		html {
 			text-transform: uppercase;
 			background-color: hsl(35, 35%, 70%);
@@ -96,7 +151,7 @@
 			margin-bottom: 0.8rem;
 			line-height: 4rem;
 		}
-		#background {
+		.background {
 			position: fixed;
 			width: 100vw;
 			height: 100vh;
@@ -135,6 +190,23 @@
 			position: fixed;
 			right: 1.25rem;
 			top: 1.25rem;
+		}
+		
+		@media(orientation: portrait) {
+			#bgPortrait {
+				display: inherit;
+			}
+			#bgLandscape {
+				display: none;
+			}
+		}
+		@media(orientation: landscape) {
+			#bgPortrait {
+				display: none;
+			}
+			#bgLandscape {
+				display: inherit;
+			}
 		}
 		
 		@media(max-width: 18rem) {
