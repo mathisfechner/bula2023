@@ -148,5 +148,11 @@
                 font-size: 13pt;
             }
         }
+
+	@media (max-height: 300px) {
+	    html {
+		font-size: 8pt;
+	    }
+	}
     </style>
 </html>
