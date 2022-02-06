@@ -4,6 +4,26 @@ xcuserdata
 *.xcodeproj
 DerivedData/
 .DS_Store
-db.sqlite
 .swiftpm
+.Public/
 
+vue/bula2023/node_modules
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+vue/bula2023/npm-debug.log*
+vue/bula2023/yarn-debug.log*
+vue/bula2023/yarn-error.log*
+vue/bula2023/pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
