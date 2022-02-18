@@ -2,7 +2,7 @@
     <header>
         <img ref="logoTop" id="logoTop" class="logo" src="/logo.png" alt="BuLa Logo">
         <div id="headerRow" :class="{'showOptions': showOptions}">
-          <button ref="burgerMenu" id="burgerMenu" :class="{'showOptions': showOptions}" @click="displayMenu = !displayMenu">
+          <button ref="burgerMenu" id="burgerMenu" :class="{'showOptions': showOptions}" @click.stop="toggleMenu">
               <span aria-hidden="true">–</span>
               <span aria-hidden="true">–</span>
               <span aria-hidden="true">–</span>
@@ -22,39 +22,47 @@
 import mixin from '@/mixin.js'
 
 export default {
-    mixins: [mixin],
-    data() {
-        return{
-            initialised: false,
-            showOptions: false,
-            displayMenu: false,
-        }
+  mixins: [mixin],
+  data() {
+    return{
+      initialised: false,
+      showOptions: false,
+      displayMenu: false,
+    }
+  },
+  methods: {
+    toggleMenu: function(e) {
+      this.displayMenu = !this.displayMenu;
+      if (this.displayMenu) {
+        window.addEventListener("click", () => {
+          this.displayMenu = false;
+        }, {once: true})
+      }
     },
-    methods: {
-        updateHeader: function() {
-            const scrollY = window.pageYOffset;
-            const rem = parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue('font-size'));
-            //if (scrollY > 6 * rem && this.initialised) return;
-            //logoTop
-            this.$refs.logoTop.style.width = Math.max(8 - 3 * scrollY / (3 * rem), 0) + "rem";
-            this.$refs.logoTop.style.height = Math.max(8 - 3 * scrollY / (3 * rem), 0) + "rem";
-            //if (scrollY > 2 * rem && this.initialised) return;
-            //logoRight, Bula,
-            this.$refs.BuLa.style.fontSize = Math.max(5.5 - 0.5 * scrollY / (2 * rem), 5) + "rem";
+    updateHeader: function() {
+      const scrollY = window.pageYOffset;
+      const rem = parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue('font-size'));
+      //if (scrollY > 6 * rem && this.initialised) return;
+      //logoTop
+      this.$refs.logoTop.style.width = Math.max(8 - 3 * scrollY / (3 * rem), 0) + "rem";
+      this.$refs.logoTop.style.height = Math.max(8 - 3 * scrollY / (3 * rem), 0) + "rem";
+      //if (scrollY > 2 * rem && this.initialised) return;
+      //logoRight, Bula,
+      this.$refs.BuLa.style.fontSize = Math.max(5.5 - 0.5 * scrollY / (2 * rem), 5) + "rem";
 
-            this.$refs.logoRight.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
-            this.$refs.logoRight.style.height = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
+      this.$refs.logoRight.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
+      this.$refs.logoRight.style.height = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
 
-            this.$refs.burgerMenu.style.fontSize = Math.max(4 - 1 * scrollY / (2 * rem), 3) + "rem";
-            this.$refs.burgerMenu.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
-            this.$refs.burgerMenu.style.height = Math.max(3 - 3/4 * scrollY / (2 * rem), 3-3/4) + "rem";
-            this.$refs.burgerMenu.style.marginTop = Math.min(-1.5 + 0.75 * scrollY / (2 * rem), -0.75) + "rem";
-            this.initialised = true;
+      this.$refs.burgerMenu.style.fontSize = Math.max(4 - 1 * scrollY / (2 * rem), 3) + "rem";
+      this.$refs.burgerMenu.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
+      this.$refs.burgerMenu.style.height = Math.max(3 - 3/4 * scrollY / (2 * rem), 3-3/4) + "rem";
+      this.$refs.burgerMenu.style.marginTop = Math.min(-1.5 + 0.75 * scrollY / (2 * rem), -0.75) + "rem";
+      this.initialised = true;
 
-            if (scrollY > 8.5 * rem) this.showOptions = true;
-            else this.showOptions = false;
-        }
-    },
+      if (scrollY > 8.5 * rem) this.showOptions = true;
+      else this.showOptions = false;
+    }
+  },
   mounted() {
     this.updateHeader();
     window.addEventListener("scroll", this.updateHeader)
