@@ -147,13 +147,13 @@ header {
     margin: 1rem 1rem;
     #logoTop {display: block;};
     #logoRight {
-      width: 5rem !important;
+      width: 2rem !important;
       height: 5rem !important;
       transform: translate(200%, 0);
       .transition();
     }
     #burgerMenu {
-      width: 2rem !important;
+      width: 5rem !important;
       transform: translate(-200%, 0);
       .transition();
     }
