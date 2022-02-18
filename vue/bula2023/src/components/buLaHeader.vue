@@ -153,7 +153,7 @@ header {
       .transition();
     }
     #burgerMenu {
-      width: 5rem !important;
+      width: 2rem !important;
       transform: translate(-200%, 0);
       .transition();
     }
