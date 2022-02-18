@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <main>
+      <countdown></countdown>
+      <willkommen></willkommen>
+      <team></team>
+      <faq></faq>
+    </main>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import mixin from '@/mixin.js'
+import team from '../components/team.vue';
+import Willkommen from '../components/willkommen.vue';
+import Countdown from '../components/countdown.vue';
+import faq from '../components/faq.vue';
+import BuLaHeader from '../components/buLaHeader.vue';
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  components: { team, Willkommen, Countdown, faq, BuLaHeader },
+  mixins: [mixin],
+  computed: {},
+  data() {
+    return{
+    }
   }
 }
 </script>
+
+<style lang="less">
+
+</style>

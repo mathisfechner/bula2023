@@ -1,30 +1,26 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <bu-la-header></bu-la-header>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import mixin from '@/mixin.js'
+import BuLaHeader from './components/buLaHeader.vue';
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: { BuLaHeader },
+  mixins: [mixin],
+  computed: {},
+  data() {
+    return{
     }
   }
 }
+</script>
+
+<style lang="less">
+@import "~@/less/index.less";
+@import "~@/less/main.less";
 </style>
