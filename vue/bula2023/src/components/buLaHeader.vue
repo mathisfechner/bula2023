@@ -78,7 +78,7 @@ header {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  width: calc(100% - 5rem);
+  width: calc(100% - 4rem);
   margin: 1rem 2rem;
 
   nav {
@@ -127,6 +127,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
     span {
       margin: 0rem;
       height: 0rem;
@@ -142,7 +143,7 @@ header {
   #logoTop {display: none;}; 
 
   @media (max-width: 25rem) {
-    width: calc(100% - 3rem);
+    width: calc(100% - 2rem);
     margin: 1rem 1rem;
     #logoTop {display: block;};
     #logoRight {
@@ -152,12 +153,12 @@ header {
       .transition();
     }
     #burgerMenu {
-      width: 5rem !important;
+      width: 2rem !important;
       transform: translate(-200%, 0);
       .transition();
     }
     .showOptions {
-      &#burgerMenu, &#logoRight {transform: translate(0,0) !important;}
+      &#burgerMenu, &#logoRight {transform: translate(0,0) !important; width: 5rem !important}
     }
   }
   @media (max-height: 20rem) {
