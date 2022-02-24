@@ -1,49 +1,28 @@
 <template>
-  <div>
-    <h2>FAQ</h2>
-    <div id="FAQWrapper">
-        <button class="FAQ bubble1 hoverYellow">
-            <h4>{{store.FAQ.categories[0].title}}</h4>
-            <p>{{store.FAQ.categories[0].description}}</p>
-        </button>
-        <button class="FAQ bubble2 hoverBlue">
-            <h4>{{store.FAQ.categories[1].title}}</h4>
-            <p>{{store.FAQ.categories[1].description}}</p>
-        </button>
-    </div>
-    <button class="FAQ bubble1 hoverRed">
-        <h4>{{store.FAQ.categories[2].title}}</h4>
-        <p>{{store.FAQ.categories[2].description}}</p>
-    </button>
-    <div id="FAQWrapper">
-        <button class="FAQ bubble2 hoverBlue">
-            <h4>{{store.FAQ.categories[3].title}}</h4>
-            <p>{{store.FAQ.categories[3].description}}</p>
-        </button>
-        <button class="FAQ bubble1 hoverYellow">
-            <h4>{{store.FAQ.categories[4].title}}</h4>
-            <p>{{store.FAQ.categories[4].description}}</p>
-        </button>
-    </div>
-  </div>
+    <router-link :to="'/faq/'+tag" :class="['FAQ', faq.class]">
+        <h4>{{faq.title}}</h4>
+        <p>{{faq.description}}</p>
+    </router-link>
 </template>
 
 <script>
 import mixin from '@/mixin.js'
 
 export default {
-    mixins: [mixin]
+    mixins: [mixin],
+    props: {
+        tag: Object
+    },
+    computed: {
+        faq: function() {
+            return this.store.FAQ.categories[this.tag]
+        }
+    }
 }
 </script>
 
 <style lang="less">
 @import "~@/less/main.less";
-#FAQWrapper {
-  display: flex;
-  @media (max-width: 30rem) {
-      flex-direction: column;
-  }
-}
 .FAQ {
   border-radius: 1rem;
   border: 0.25rem solid black;

@@ -1,11 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import team from '../views/Team.vue'
+import faqs from '../views/FAQs.vue'
+import faq from '../views/FAQ.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/:pathMatch*',
     name: 'Home',
     component: Home
+  },
+  {
+    path:'/team',
+    name: 'team',
+    component: team
+  },
+  {
+    path:'/faq',
+    name: 'faqs',
+    component: faqs
+  },
+  {
+    path: '/faq/:tag',
+    name: 'faq',
+    component: faq,
+    props: true
   }
 ]
 

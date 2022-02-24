@@ -1,4 +1,4 @@
-import {reactive} from 'vue'
+import {Fragment, reactive} from 'vue'
 
 let Store = reactive({
     i18n: {
@@ -12,18 +12,35 @@ let Store = reactive({
         {name: "Rike", position: "BuLa-Leitung"},
         {name: "Melisa", position: "BuLa-Leitung"},
         {name: "Theresa", position: "BuLa-Leitung"},
-        {name: "Harald", position: "BuLa-Leitung"},
-        {name: "Harald", position: "BuLa-Leitung"},
-        {name: "Harald", position: "BuLa-Leitung"}
+        {name: "Harald", position: "Sichere-Gemeinde"},
+        {name: "Harald", position: "Sichere-Gemeinde"},
+        {name: "Harald", position: "Sichere-Gemeinde"}
     ],
     FAQ: {
-        categories: [
-            {title: "Ich will teilnehmen!", description: "Anmeldung. Nützliche Infos. Und vieles mehr."},
-            {title: "Mein Kind will teilnehmen.", description: "Infos für Eltern. Packlisten. Ansprechpersonen"},
-            {title: "faqs für Mitarbeitende in den Stämmen", description: "Gruppenanmeldungen. Material zum Download. Und viele Infos zur Vorbereitung."},
-            {title: "Ich will euch unterstützen!", description: "Wundervoll :) Infos und Möglichkeiten zum Sponsoring."},
-            {title: "ich will Mitarbeiten!", description: "Fantastisch! Alles zu den Aufgaben und Jobs."}
-        ]
+        categories: {
+            teilnehmende: {
+                title: "Ich will teilnehmen!", description: "Anmeldung. Nützliche Infos. Und vieles mehr.", class: "bubble1 hoverYellow",
+                questions: [
+                    {question: "Wie kann ich mich anmelden?", answer: "Über folgenden Link oder so. Im Zweifel immer Sippen- oder Stammesführung fragen. Falls du in der Stammesführung bist "}
+                ]
+            },
+            eltern: {
+                title: "Mein Kind will teilnehmen.", description: "Infos für Eltern. Packlisten. Ansprechpersonen", class: "bubble2 hoverBlue",
+                questions: []
+            },
+            mitarbeitende: {
+                title: "faqs für Mitarbeitende in den Stämmen", description: "Gruppenanmeldungen. Material zum Download. Und viele Infos zur Vorbereitung.", class: "bubble1 hoverRed",
+                questions: []
+            },
+            support: {
+                title: "Ich will euch unterstützen!", description: "Wundervoll :) Infos und Möglichkeiten zum Sponsoring.", class: "bubble2 hoverBlue",
+                questions: []
+            },
+            jobs: {
+                title: "ich will Mitarbeiten!", description: "Fantastisch! Alles zu den Aufgaben und Jobs.", class: "bubble1 hoverYellow",
+                questions: []
+            }
+        }
     },
     Jobs: [],
     Sponsoren: []
