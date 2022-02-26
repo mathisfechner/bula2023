@@ -11,7 +11,7 @@
           <img ref="logoRight" id="logoRight" :class="{'logo': true, 'showOptions': showOptions}" src="/logo.png" alt="BuLa Logo">
         </div>
         <nav :class="{'displayMenu': displayMenu}" :aria-hidden="!displayMenu">
-          <router-link to="/team" :tabindex="displayMenu ? 0 : -1">Team</router-link>
+          <router-link to="/team" :tabindex="displayMenu ? 0 : -1">Team | Jobs</router-link>
           <router-link to="/faq" :tabindex="displayMenu ? 0 : -1">FAQ</router-link>
           <router-link to="/karte" :tabindex="displayMenu ? 0 : -1">Karte</router-link>
         </nav>
