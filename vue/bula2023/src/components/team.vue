@@ -2,13 +2,13 @@
   <div>
     <div id="Team" :class="[expanded ? 'cluster' : 'row']">
     <div class="teamMate" v-for="person in team" :key="person.name">
-      <img :src="'/persons/'+person.name+'.jpeg'" class="profilePicture" alt="person.name">
+      <img :src="'/persons/'+person.name+'.jpeg'" class="profilePicture" :alt="person.name">
       <img :src="'/borderCycle.png'" class="profilePictureBorder">
       <h4>{{person.name}}</h4>
       <h5>{{person.position}}</h5>
     </div>
     </div>
-    <div style="display: flex; justify-content: center">
+    <div v-if="!isExpanded" style="display: flex; justify-content: center">
       <button class="expandButton" @click="expanded = !expanded">{{expandButtonContent}}</button>
     </div>
   </div>

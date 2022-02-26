@@ -40,6 +40,7 @@ export default {
     }
     h4 {
         margin: auto auto auto 0;
+        text-align: left;
     }
 }
 </style>

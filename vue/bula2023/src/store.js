@@ -46,7 +46,11 @@ let Store = reactive({
             }
         }
     },
-    Jobs: [],
+    Jobs: [
+        {title: "Was halt offen ist", description: "Wär gut, wenn du irgendwie Plan hast!", contact: "Rike"},
+        {title: "Was halt offen ist", description: "Wär gut, wenn du irgendwie Plan hast!", contact: "Rike"},
+        {title: "Was halt offen ist", description: "Wär gut, wenn du irgendwie Plan hast!", contact: "Rike"},
+    ],
     Sponsoren: []
 });
 

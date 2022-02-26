@@ -153,6 +153,12 @@ header {
   }
   #logoTop {display: none;}; 
 
+  @media (min-width: 28rem) {
+    #headerRow {
+      padding: 0.5rem 1rem;
+    }
+  }
+
   @media (max-width: 25rem) {
     width: calc(100% - 2rem);
     margin: 1rem 1rem;
