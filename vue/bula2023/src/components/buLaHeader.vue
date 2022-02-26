@@ -81,6 +81,7 @@ main {
 }
 
 header {
+  pointer-events: none;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -90,6 +91,7 @@ header {
   margin: 1rem 2rem;
 
   nav {
+    pointer-events: all;
     align-self: flex-start;
     margin-left: -0.5rem;
     margin-top: 1rem;
@@ -118,6 +120,7 @@ header {
   }
 
   #headerRow {
+    pointer-events: all;
     width: 100%;
     display: flex;
     justify-content: space-between;

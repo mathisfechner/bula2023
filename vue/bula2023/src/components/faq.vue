@@ -11,7 +11,7 @@ import mixin from '@/mixin.js'
 export default {
     mixins: [mixin],
     props: {
-        tag: Object
+        tag: String
     },
     computed: {
         faq: function() {

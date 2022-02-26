@@ -21,7 +21,11 @@ let Store = reactive({
             teilnehmende: {
                 title: "Ich will teilnehmen!", description: "Anmeldung. Nützliche Infos. Und vieles mehr.", class: "bubble1 hoverYellow",
                 questions: [
-                    {question: "Wie kann ich mich anmelden?", answer: "Über folgenden Link oder so. Im Zweifel immer Sippen- oder Stammesführung fragen. Falls du in der Stammesführung bist "}
+                    {question: "Wie kann ich mich anmelden?", answer: "Über folgenden Link oder so. Im Zweifel immer Sippen- oder Stammesführung fragen. Falls du in der Stammesführung bist, denk dir was aus."},
+                    {question: "Wie kann ich mich anmelden?", answer: "Über folgenden Link oder so. Im Zweifel immer Sippen- oder Stammesführung fragen. Falls du in der Stammesführung bist, denk dir was aus."},
+                    {question: "Wie kann ich mich anmelden?", answer: "Über folgenden Link oder so. Im Zweifel immer Sippen- oder Stammesführung fragen. Falls du in der Stammesführung bist, denk dir was aus."},
+                    {question: "Wie kann ich mich anmelden?", answer: "Über folgenden Link oder so. Im Zweifel immer Sippen- oder Stammesführung fragen. Falls du in der Stammesführung bist, denk dir was aus."},
+                    {question: "Wie kann ich mich anmelden?", answer: "Über folgenden Link oder so. Im Zweifel immer Sippen- oder Stammesführung fragen. Falls du in der Stammesführung bist, denk dir was aus."},
                 ]
             },
             eltern: {

@@ -1,15 +1,17 @@
 <template>
   <main>
     <faq :tag="tag"></faq>
+    <faq-question-row v-for="question in store.FAQ.categories[tag].questions" :question="question"></faq-question-row>
   </main>
 </template>
 
 <script>
 import mixin from '@/mixin.js'
 import faq from '../components/faq.vue';
+import FaqQuestionRow from '../components/faqQuestionRow.vue';
 
 export default {
-  components: { faq },
+  components: { faq, FaqQuestionRow },
   mixins: [mixin],
   props: {tag: String}
 }
