@@ -34,9 +34,16 @@ export default {
     toggleMenu: function(e) {
       this.displayMenu = !this.displayMenu;
       if (this.displayMenu) {
-        window.addEventListener("click", () => {
-          this.displayMenu = false;
-        }, {once: true})
+        console.log(e.pointerType);
+        if (e.pointerType=="touch") {
+          window.addEventListener("touchstart", () => {
+            this.displayMenu = false;
+          }, {once: true})
+        } else {
+          window.addEventListener("click", () => {
+            this.displayMenu = false;
+          }, {once: true})
+        }
       }
     },
     updateHeader: function() {
