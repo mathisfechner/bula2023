@@ -51,6 +51,13 @@ let Store = reactive({
         {title: "Was halt offen ist", description: "Wär gut, wenn du irgendwie Plan hast!", contact: "Rike"},
         {title: "Was halt offen ist", description: "Wär gut, wenn du irgendwie Plan hast!", contact: "Rike"},
     ],
+    Map: {
+        undefined: "Über die Karte streichen oder einen Ort auswählen, um den Lagerplatz kennenzulernen.",
+        ersteHilfe: "Hier könnten Informationen zum erste Hilfe Haus stehen",
+        Sportplatz: "Hier könnten Informationen zum Sportplatz stehen",
+        Küche: "Hier könnten Informationen zur Küche stehen",
+        Waschhaus: "Hier könnten Informationen zum Waschhaus stehen",
+    },
     Sponsoren: []
 });
 

@@ -82,7 +82,7 @@ export default {
 
 main {
   padding-top: 10rem !important;
-  @media (max-width: 25rem) {
+  @media (max-width: 25*16px) {
     padding-top: 16rem !important;
   }
 }
@@ -160,13 +160,13 @@ header {
   }
   #logoTop {display: none;}; 
 
-  @media (min-width: 28rem) {
+  @media (min-width: 28*16px) {
     #headerRow {
       padding: 0.5rem 1rem;
     }
   }
 
-  @media (max-width: 25rem) {
+  @media (max-width: 25*16px) {
     width: calc(100% - 2rem);
     margin: 1rem 1rem;
     #logoTop {display: block;};
@@ -185,7 +185,7 @@ header {
       &#burgerMenu, &#logoRight {transform: translate(0,0) !important; width: 5rem !important}
     }
   }
-  @media (max-height: 20rem) {
+  @media (max-height: 20*16px) {
     h1 {font-size: 3rem !important;}
     #logoRight {
       width: 3rem !important;

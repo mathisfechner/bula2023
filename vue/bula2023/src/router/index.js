@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import team from '../views/Team.vue'
 import faqs from '../views/FAQs.vue'
 import faq from '../views/FAQ.vue'
+import map from '../views/Map.vue'
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     name: 'faq',
     component: faq,
     props: true
+  },
+  {
+    path:'/karte',
+    name: 'karte',
+    component: map
   }
 ]
 

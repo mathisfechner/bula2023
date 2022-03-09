@@ -38,7 +38,7 @@ h2 {
     color: var(--font-color);
     font-size: 5rem;
     margin: 2rem 0 1rem 0;
-    @media (min-width: 33.5rem) {
+    @media (min-width: 33.5*16px) {
         &::before {content: "– ";}
         &::after {content: " –"};
     }
@@ -75,8 +75,15 @@ a {
     }
 }
 
-@media (max-width: 28rem) {
+@media (max-width: 28*16px) {
     html {
         font-size: 13px;
+    }
+}
+
+.flexRow {
+    display: flex;
+    @media (max-width: 30*16px) {
+        flex-direction: column;
     }
 }

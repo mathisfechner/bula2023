@@ -65,7 +65,7 @@ export default {
             top: -0.1rem;
         }
     }
-    @media (max-width: 30rem) {
+    @media (max-width: 30*16px) {
         flex-direction: column;
         .contactImage {
             align-self: center;

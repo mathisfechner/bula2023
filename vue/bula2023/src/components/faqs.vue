@@ -1,14 +1,14 @@
 <template>
   <div>
     <h2>FAQ</h2>
-    <div id="FAQWrapper">
+    <div class="flexRow">
       <faq :tag="'teilnehmende'"></faq>
       <faq :tag="'eltern'"></faq>
     </div>
-    <div id="FAQWrapper">
+    <div class="flexRow">
       <faq :tag="'mitarbeitende'"></faq>
     </div>
-    <div id="FAQWrapper">
+    <div class="flexRow">
       <faq :tag="'support'"></faq>
       <faq :tag="'jobs'"></faq>
     </div>
@@ -27,10 +27,5 @@ export default {
 
 <style lang="less">
 @import "~@/less/main.less";
-#FAQWrapper {
-  display: flex;
-  @media (max-width: 30rem) {
-      flex-direction: column;
-  }
-}
+
 </style>

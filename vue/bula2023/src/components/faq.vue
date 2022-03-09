@@ -33,10 +33,6 @@ export default {
     margin-top: 1rem;
     text-transform: uppercase;
   }
-  @border-offset: 0.1rem;
-  @border-radius: 0.2rem;
-  @border-color: #FFFFFF;
-  @drop-shadow: drop-shadow(@border-offset @border-offset @border-radius @border-color) drop-shadow(-@border-offset @border-offset @border-radius @border-color) drop-shadow(@border-offset -@border-offset @border-radius @border-color) drop-shadow(-@border-offset -@border-offset @border-radius @border-color);
   &.hoverYellow:hover {
     @border-color: fadeout(@clr-yellow, 15%);
     filter:  @drop-shadow;
