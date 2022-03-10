@@ -1,10 +1,12 @@
 <template>
     <div>
-        <div class="question">
-            <h4>{{question.question}}</h4>
-            <button class="expandButton" @click="isExpanded = !isExpanded">{{expandButtonContent}}</button>
-        </div>
-        <p v-if="isExpanded">{{question.answer}}</p>
+        <button style="width: 100%; padding: 0" @click="isExpanded = !isExpanded">
+            <span class="question">
+                <h4>{{question.question}}</h4>
+                <span class="expandButton">{{expandButtonContent}}</span>
+            </span>
+        </button>
+        <p v-if="isExpanded" v-html="question.answer"></p>
     </div>
 </template>
 
@@ -35,6 +37,7 @@ export default {
 .question {
     display: flex;
     align-content: center;
+    justify-content: space-between;
     .expandButton {
         font-size: 3rem;
     }

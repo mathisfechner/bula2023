@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p>{{store.Map.description}}</p>
         <svg class="dontrespond" width="100%" height="100%" viewBox="0 0 4678 3512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
             <g @click="selectedArea = undefined" style="pointer-events: all" transform="matrix(1.33242,0,0,1.33215,29.3333,167.957)">
                 <g id="Lagerplatz">
