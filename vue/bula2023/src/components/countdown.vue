@@ -64,21 +64,23 @@ export default {
 }
 .item {
     margin: 0 1rem;
+    min-width: 2.5rem;
+    text-align: center;
 }
 .days {
-    .text-shadow(@clr-red);
+    .text-shadow(#E3C08C);
     font-size: 3rem;
 }
 .hours {
     .text-shadow(@clr-blue);
-    font-size: 2.75rem;// 2.567rem;
+    font-size: 3rem;//2.75rem;// 2.567rem;
 }
 .minutes {
-    .text-shadow(#E3C18C);
-    font-size: 2.25rem;//1.892rem;
+    .text-shadow(@clr-red);
+    font-size: 3rem;//2.25rem;//1.892rem;
 }
 .seconds {
     .text-shadow(#E3C08C);
-    font-size: 1.25rem; //0.3rem;
+    font-size: 3rem;//1.25rem; //0.3rem;
 }
 </style>111 95 70

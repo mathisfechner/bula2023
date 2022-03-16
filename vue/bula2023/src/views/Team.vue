@@ -2,7 +2,7 @@
   <main>
     <h2>Team</h2>
     <team :team="store.Team" :isExpanded="true"></team>
-    <h2>Offene Jobs</h2>
+    <h2 id="jobs">Offene Jobs</h2>
     <jobs></jobs>
   </main>
 </template>

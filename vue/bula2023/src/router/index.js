@@ -28,8 +28,8 @@ const routes = [
     props: true
   },
   {
-    path:'/karte',
-    name: 'karte',
+    path:'/lagerplatz',
+    name: 'lagerplatz',
     component: map
   }
 ]
@@ -38,8 +38,15 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    return {top: 0}
+    if (savedPosition) return savedPosition;
+    console.log(to);
+    if (to.hash != "") return {el: to.hash, top: 130, left: 0, behavior: to.path == from.path ? 'smooth' : 'auto'};
+    return {top: 0};
   }
+})
+
+router.afterEach((to, from) => {
+  from.query.savedPosition = true;
 })
 
 export default router

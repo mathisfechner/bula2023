@@ -3,17 +3,24 @@ import {Fragment, reactive} from 'vue'
 let Store = reactive({
     i18n: {
         willkommen: [
-            "Nach zwei Jahren Pandemie hast du genug davon, in deinem Zimmer vorm Computer zu hocken? Du willst endlich wieder raus? Abenteuer erleben? Pfadfinder aus anderen Stämmen kennenlernen? Neue Freunde finden? Bis tief in die Nacht singen? Beim Großen Spiel dein Bestes geben? Mit dem ganzen BuLa Gottesdienst feiern? Deiner Kreativität in Workshops und bei Lagerbauten freien Lauf lassen? ",
-            "Wenn du alle oder mehrere dieser Fragen mit „Ja!“ beantwortet hast, bist du auf dieser Website genau richtig – und noch viel mehr auf unserem nächsten Bundeslager! Stattfinden wird es vom 29. Juli bis zum 06. August 2023 in Reinwarzhofen. Wir freuen uns auf dich!",
+            "Nach zwei Jahren Pandemie hast du genug davon, in deinem Zimmer vorm Computer zu hocken? Du willst endlich wieder raus? Abenteuer erleben? Pfadfinder aus anderen Stämmen kennenlernen? Neue Freunde finden? Bis tief in die Nacht singen? Beim Großen Spiel dein Bestes geben? Mit dem ganzen BuLa Gottesdienst feiern? Deiner Kreativität in Workshops und bei Lagerbauten freien Lauf lassen?",
+            "Wenn du auch nur eine dieser Fragen mit „Ja!“ beantwortet hast, bist du auf dieser Website genau richtig – und noch viel mehr auf dem nächsten Bundeslager der <a href='https://bps-pfadfinder.de' target='blank'>BPS</a>! Stattfinden wird es vom 29. Juli bis zum 06. August 2023 in Reinwarzhofen. Wir freuen uns auf dich!",
         ]
     },
     Team: [
-        {name: "Rike", position: "BuLa-Leitung"},
-        {name: "Melisa", position: "BuLa-Leitung"},
-        {name: "Theresa", position: "BuLa-Leitung"},
-        {name: "Harald", position: "Sichere-Gemeinde"},
-        {name: "Harald", position: "Sichere-Gemeinde"},
-        {name: "Harald", position: "Sichere-Gemeinde"}
+        {name: "Rike", position: "Lagerleitung", text: "Gilt in der Pfadfinderschaft als lebende Legende und hat immer eine Geschichte parat. Auf dem BuLa hätte sie gern ein eigenes Trampolin.", mail:"lagerleitung@bula2023.de"},
+        {name: "Melisa", position: "Lagerleitung", text: "Bekannt für ihre hohen Qualitätsansprüche. Wünscht sich für das BuLa ein richtiges Schwert und hofft, dass sie auch mal auf Rikes Trampolin darf.", mail:"lagerleitung@bula2023.de"},
+        {name: "Theresa", position: "Lagerleitung", text:"Mag Zahlen. Hat daher ein Auge auf die Finanzen, wenn sich Rike und Melisa ständig teuren Schwachsinn für’s BuLa wünschen.", mail:"lagerleitung@bula2023.de"},
+        {name: "Justus", position: "Küche", text: "Kocht auch nur mit Wasser. Dafür geben noch Mia, Caro und Mathis aus Hannover ihren Senf dazu."},
+        {name: "Jonathan", position: "Geistliches", text:"Leidenschaftlicher Theologe und Maultaschenliebhaber. Predigt gern mit einer Axt in der Hand."},
+        {name: "Mara", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei Christopher und dem größten Stamm der BPS unterstützt."},
+        {name: "Christopher", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei von Mara und dem größten Stamm der BPS unterstützt."},
+        {name: "Marten", position:"Design", text:"Unser Mann für’s Schöne. Außerdem für die Gestaltung der Website und das Corporate Design zuständig."},
+        {name:"Mathis", position:"Website", text:"Hätte als Einziger verhindern können, dass er hier erwähnt wird. Empfiehlt außerdem bei technischen Notfällen, das Gerät aus- und wieder anzuschalten."},
+        {name:"Mello", position:"Brieffreundschaften", text:"Knüpft lieber Kontakte als Knoten. Vernetzt Briefmarkensammler und Schreiberlinge quer durch den Bund."},
+        {name:"Lotte", position:"Brieffreundschaften", text:"Knüpft lieber Kontakte als Knoten. Vernetzt Briefmarkensammler und Schreiberlinge quer durch den Bund."},
+        {name:"woody", position:"Großbauten", text:"Begeisterter Hochstapler. Arbeitet vorzugsweise mit Holz, Seil und Schwarzzeltmaterial."},
+        {name:"Martin", position:"Holz", text:"Kann alles, außer nein sagen. Ist quasi der Blitzableiter der Lagerleitung."}
     ],
     FAQ: {
         categories: {
@@ -38,7 +45,7 @@ let Store = reactive({
                     },
                     {
                         question: "Ich bin (noch) kein Pfadi, finde die Pfadfinderei aber total spannend. Kann ich vorbeischauen?",
-                        answer: "Auf jeden Fall! Nimm am besten direkt Kontakt mit der Lagerleitung auf, dann schauen wir, wie und wann es am besten passt."
+                        answer: "Wenn du schon volljährig bist: auf jeden Fall! Nimm am besten direkt Kontakt mit der Lagerleitung auf, dann schauen wir, wie und wann es am besten passt. Falls du U18 bist, schau mal auf unserer <a href='https://www.bps-pfadfinder.de/kontakt/karte-aller-staemme/' target='blank'>Website</a> nach - vielleicht gibt es ja einen Stamm in deiner Nähe, dem du dich anschließen kannst"
                     },
                     {
                         question: "Kann ich meine Kinder mitbringen, auch wenn sie noch keine zehn Jahre alt sind?",
@@ -50,7 +57,7 @@ let Store = reactive({
                     },
                     {
                         question: "Stimmt es, dass das Lager ausschließlich digital stattfinden soll?",
-                        answer: "Nein. Das war ein Aprilscherz."
+                        answer: "Nein. Das war ein <a href='https://www.bps-pfadfinder.de/aktionen/berichte/artikel/bula-statt-digitala-2023-wie-es-dazu-kam-und-was-nicht-geplant-ist/' target='blank'>Aprilscherz</a>."
                     }
                 ]
             },
@@ -67,12 +74,12 @@ let Store = reactive({
                     },
                     {
                         question: "Habt ihr ein Kinderschutzkonzept?",
-                        answer: "Ja, das haben wir. Das Kinderschutzkonzept der BPS [Link zu Website] wird selbstverständlich auch auf dem BuLa gelten. Unser Team für ein Sicheres BuLa wird im Vorfeld die Mitarbeitenden schulen und steht auf dem Lager Kindern und Mitarbeitenden mit einem offenen Ohr sowie Rat und Tat zur Seite."
+                        answer: "Ja, das haben wir. Das <a href='https://www.bps-pfadfinder.de/downloads/sicheregemeinde/' target='blank'>Kinderschutzkonzept der BPS</a> wird selbstverständlich auch auf dem BuLa gelten. Unser Team für ein Sicheres BuLa wird im Vorfeld die Mitarbeitenden schulen und steht auf dem Lager Kindern und Mitarbeitenden mit einem offenen Ohr sowie Rat und Tat zur Seite."
                     },
                 ]
             },
             mitarbeitende: {
-                title: "faqs für Mitarbeitende in den Stämmen", description: "Gruppenanmeldungen. Material zum Download. Und viele Infos zur Vorbereitung.", class: "bubble1 hoverRed",
+                title: "Mein Stamm will teilnehmen", description: "Infos für Mitarbeitende in den Stämmen. Gruppenanmeldungen. Material zum Download. Alles Wichtige zur Vorbereitung.", class: "bubble1 hoverRed",
                 questions: [
                     {
                         question: "Wer ist eingeladen?",
@@ -130,7 +137,11 @@ let Store = reactive({
                     },
                     {
                         question: "Ich kann am BuLa leider nicht teilnehmen, möchte aber gerne im Vorfeld mitarbeiten. Geht das?",
-                        answer: "Na klar geht das! Wir haben auch einige Aufgaben, die im Vorfeld zu erledigen sind und würden uns sehr freuen, wenn du uns helfen könntest. Schau einfach mal in unsere Jobbörse vorbei."
+                        answer: [
+                            {text: "Na klar geht das! Wir haben auch einige Aufgaben, die im Vorfeld zu erledigen sind und würden uns sehr freuen, wenn du uns helfen könntest. Schau einfach mal in unserer "},
+                            {link: "/team#jobs", linkText: "Jobbörse"},
+                            {text: " vorbei."}
+                        ]
                     },
                 ]
             }
@@ -153,15 +164,15 @@ let Store = reactive({
                 description: "Sowohl vor dem BuLa als währenddessen würden wir die verschiedenen Unterlagen gerne mit lustigen, kunstvollen Bildern schmücken. Wenn du zeichnen kannst und Spaß daran hast, melde dich gerne, wir freuen uns auf tolle Comics und Bilder.",
                 efford: "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
                 contact: "Rike"
+            },
+            {
+                title: "Erarbeitung von Sippenstundenentwürfen",
+                description: "Du hast kreative Ideen für Sippenstunden, mit denen wir im Vorfeld des BuLas Jupfis und Pfadis auf das BuLa-Thema einstimmen können? Du hast Spaß daran, daraus Stundenentwürfe für unterschiedliche Altersstufen zu entwickeln? Dann werde aktiv und hilf mit bei der Erarbeitung von Sippenstundenentwürfen! Damit es nicht zu viel für eine Person wird, planen wir, diese Aufgabe auf mehrere Schultern zu verteilen.",
+                efford: "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
+                contact: "Rike"
             }
         ],
         "PROGRAMM": [
-            {
-                title: "Schauspiel-Team",
-                description: "Wir haben die große Freude, woody als den Leiter unseres Schauspielteams gewonnen zu haben. Auch wenn die genauen Rollen noch nicht feststehen, suchen wir dennoch motivierte Pfadis, die Lust haben, auf der Bühne in andere Rollen zu schlüpfen und die Geschichte für die Kinder erlebbar zu machen.",
-                efford: "Vorbereitung im Vorfeld des Lagers, ansonsten vor allem während des Lagers.",
-                contact: "Rike"
-            },
             {
                 title: "Singewettstreit",
                 description: "Wie vergangenes BuLa würden wir gerne wieder einen Singewettstreit veranstalten. Abgesehen von der Jury brauchen wir dafür Leute, die den Abend organisieren und koordinieren. Das bedeutet die Einteilung in Kategorien, die Annahme von Bewerbungen und die Durchführung an dem Abend. Gerne kann sich hierfür auch eine Gruppe von Freunden oder ein Stamm bereiterklären.",
@@ -181,9 +192,9 @@ let Store = reactive({
                 contact: "Rike"
             },
             {
-                title: "Team für den Hindernis-Spenden-Lauf",
-                description: "Auf dem Lager wird es einen Hindernis-Spenden-Lauf geben, der sich nur als ganze Sippe bewältigen lassen soll. Für jede Sippe, die den Lauf erfolgreich absolviert, werden unsere Sponsoren an ein Projekt spenden. Wir suchen ein Team, dass den Hindernis-Parcours aufbaut und organisiert. Da die Sippen über das Lager verteilt in ihrer freien Zeit teilnehmen können sollen, werdet ihr bei der Betreuung – soweit gewünscht – vom Rover-Bereitschaftsdienst unterstützt.",
-                efford: "Planung des Konzepts vor dem Lager, ansonsten vor allem auf dem Lager. Aufbau während des Vorlagers wünschenswert, aber kein Muss.",
+                title: "Team für den Bunten Abend",
+                description: "Gemeinsam koordiniert ihr den Bunten Abend zum Abschluss des BuLas: Was soll es für Programmunkte geben? Wen braucht ihr dafür? Wann findet der letzte Show Act statt? Und wann die Siegerehrung? Als Team sorgt ihr dafür, dass der letzte BuLa-Abend ein ganz besonderer wird.",
+                efford: "Planung vor dem Lager, auf dem Lager vor allem am vorletzten Tag.",
                 contact: "Rike"
             },
         ],
@@ -194,15 +205,43 @@ let Store = reactive({
                 efford: "Abgesehen von einer digitalen Vorbesprechung: auf dem Lager. Die Schichten werden so eingeteilt, dass ihr auch euren sonstigen Verpflichtungen nachgehen könnt.",
                 contact: "Rike"
             },
+            {
+                title: "Organisation des Shuttle-Services für die An- und Abreise",
+                description: "Auch wenn es keinen Bahnhof direkt am BuLa-Ort gibt, wollen wir allen die Möglichkeit geben, mit öffentlichen Verkehrsmitteln anzureisen. Dafür brauchen wir eine oder mehrere Personen, die den Bedarf im Vorfeld klären und einen Shuttle-Service organisieren.",
+                efford: "Die Organisation erfolgt im Vorfeld des Lagers. Wenn ihr gut plant, hält sich der Aufwand auf dem Lager (und auch da nur am An- und Abreisetag) in Grenzen ☺",
+                contact: "Rike"
+            },
+            {
+                title: "Betreuung der Jupfi- und Pfadi-Reporter",
+                description: "Die Lagerzeitung wird in diesem Jahr nicht nur von Rovern und Altpfadfindern gestaltet, sondern auch von Jupfi- und Pfadfinderreportern, die sich vor dem BuLa bewerben können. Damit diese nicht völlig auf sich allein gestellt sind, brauchen wir dich! Du betreust die Jupfi- und Pfadireporter, unterstützt sie und stehst ihnen mit Rat und Tat zur Seite.",
+                efford: "Kurze Vorbereitung vor dem Lager. An einzelnen Tagen auf dem Lager. Je mehr Menschen mitmachen, desto seltener bist du dran.",
+                contact: "Rike"
+            },
+            {
+                title: "Team für den Hindernis-Spenden-Lauf",
+                description: "Auf dem Lager wird es einen Hindernis-Spenden-Lauf geben, der sich nur als ganze Sippe bewältigen lassen soll. Für jede Sippe, die den Lauf erfolgreich absolviert, werden unsere Sponsoren an ein Projekt spenden. Wir suchen ein Team, dass den Hindernis-Parcours aufbaut und organisiert. Da die Sippen über das Lager verteilt in ihrer freien Zeit teilnehmen können sollen, werdet ihr bei der Betreuung – soweit gewünscht – vom Rover-Bereitschaftsdienst unterstützt.",
+                efford: "Planung des Konzepts vor dem Lager, ansonsten vor allem auf dem Lager. Aufbau während des Vorlagers wünschenswert, aber kein Muss.",
+                contact: "Rike"
+            },
+            {
+                title: "Schauspiel-Team",
+                description: "Wir haben die große Freude, woody als den Leiter unseres Schauspielteams gewonnen zu haben. Auch wenn die genauen Rollen noch nicht feststehen, suchen wir dennoch motivierte Pfadis, die Lust haben, auf der Bühne in andere Rollen zu schlüpfen und die Geschichte für die Kinder erlebbar zu machen.",
+                efford: "Vorbereitung im Vorfeld des Lagers, ansonsten vor allem während des Lagers.",
+                contact: "Rike"
+            },
         ]
     },
     Map: {
         description: "Nach drei BuLas im Norden geht es 2023 in den Süden, genauer gesagt nach Bayern: Unser BuLa wird dieses Mal auf dem Willy-Brandt-Zeltplatz in Reinwarzhofen stattfinden. Von diesem Ort habt ihr noch nie gehört? Das wird sich ändern! Reinwarzhofen liegt in der südlichen Fränkischen Alb, grob gesagt zwischen Nürnberg und Ingolstadt. Der Lagerplatz ist mit allem ausgestattet, was ein BuLa-Lagerplatz benötigt und wurde vom BuLa-Team bereits mit einer Probe-Übernachtung bei der Besichtigung eingeweiht. Da wir zum Lagerplatz gehajkt sind, können wir euch außerdem schon versprechen: Die Gegend ist eine exzellente Hajk-Gegend! Im Plan unten könnt ihr schon einmal einen Eindruck davon bekommen, wie der Platz aufgebaut ist.",
         undefined: "Über die Karte streichen oder einen Ort auswählen, um den Lagerplatz kennenzulernen.",
-        ersteHilfe: "Hier könnten Informationen zum erste Hilfe Haus stehen",
-        Sportplatz: "Hier könnten Informationen zum Sportplatz stehen",
-        Küche: "Hier könnten Informationen zur Küche stehen",
-        Waschhaus: "Hier könnten Informationen zum Waschhaus stehen",
+        Bühne: "Hier spielt die Musik – aber nicht nur die: Auch die Gottesdienste, Abendveranstaltungen und Show Acts finden hier statt!",
+        ersteHilfe: "Die Anlaufstelle bei größeren Wehwehchen – nicht nur nach dem American Eagle-Spielen.",
+        Sportplatz: "Der Ort für alle, die sich vor dem nächsten Programmpunkt noch mal richtig austoben müssen.",
+        Küche: "Hier bekommt ihr alles, was euer Magen begehrt. Kochen müsst ihr aber selbst ;-)",
+        Waschhaus: "Damit unser BuLa eine saubere Sache wird!",
+        Info: "Info: Erste Anlaufstelle für eure Fragen – und für alle, die etwas verloren haben, denn hier findet ihr auch die Fundkiste.",
+        Fahnenmast: "Hier versammelt sich das BuLa zur Morgen- und zur Abendwache.",
+        Taverne: "Das Zentrum der BuLa-Mitarbeitenden: Hier finden morgens die Treffen der Kochgruppenleitungen statt und auch ansonsten wird hier fleißig am BuLa gearbeitet."
     },
     Sponsoren: []
 });

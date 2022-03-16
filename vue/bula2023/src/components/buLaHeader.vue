@@ -8,12 +8,12 @@
               <span aria-hidden="true">–</span>
           </button>
           <router-link to="/" tabindex="1"><h1 ref="BuLa">BuLa</h1></router-link>
-          <img ref="logoRight" id="logoRight" :class="{'logo': true, 'showOptions': showOptions}" src="/logo.png" alt="BuLa Logo">
+          <img @click="$router.push('/')" ref="logoRight" id="logoRight" :class="{'logo': true, 'showOptions': showOptions}" style="cursor:pointer" src="/logo.png" alt="BuLa Logo">
         </div>
         <nav :class="{'displayMenu': displayMenu}" :aria-hidden="!displayMenu">
           <router-link to="/team" :tabindex="displayMenu ? 0 : -1">Team | Jobs</router-link>
           <router-link to="/faq" :tabindex="displayMenu ? 0 : -1">FAQ</router-link>
-          <router-link to="/karte" :tabindex="displayMenu ? 0 : -1">Karte</router-link>
+          <router-link to="/lagerplatz" :tabindex="displayMenu ? 0 : -1">Lagerplatz</router-link>
         </nav>
     </header>
 </template>
@@ -174,7 +174,7 @@ header {
       width: 2rem !important;
       height: 5rem !important;
       transform: translate(200%, 0);
-      .transition();
+      .transition();      
     }
     #burgerMenu {
       width: 2rem !important;

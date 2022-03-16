@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h2>Karte</h2>
+    <h2>Lagerplatz</h2>
     <bu-la-map></bu-la-map>
   </main>
 </template>

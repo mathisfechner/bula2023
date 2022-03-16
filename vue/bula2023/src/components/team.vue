@@ -1,11 +1,17 @@
 <template>
   <div>
     <div id="Team" :class="[expanded ? 'cluster' : 'row']">
-    <div class="teamMate" v-for="person in team" :key="person.name">
-      <img :src="'/persons/'+person.name+'.jpeg'" class="profilePicture" :alt="person.name">
+    <div :id="person.name" class="teamMate" v-for="person in team" :key="person.name">
+      <img :src="'/persons/'+person.name+'.jpg'" class="profilePicture" :alt="person.name">
       <img :src="'/borderCycle.png'" class="profilePictureBorder">
       <h4>{{person.name}}</h4>
       <h5>{{person.position}}</h5>
+      <template v-if="!expanded || isExpanded">
+      <p>{{person.text}}</p>
+      <div style="margin: auto 0 0 auto">
+        <a v-if="person.mail" :href="'mailto:'+person.mail">Schreib mir</a>
+      </div>
+      </template>
     </div>
     </div>
     <div v-if="!isExpanded" style="display: flex; justify-content: center">
@@ -62,6 +68,11 @@ export default {
   .teamMate {
     padding: 0.5rem;
     position: relative;
+    width: 10rem;
+    a {
+      width: 100%;
+      text-decoration: underline;
+    }
   }
   
   img.profilePicture {
@@ -70,7 +81,7 @@ export default {
   }
   img.profilePictureBorder {
       position: absolute;
-      width: calc(100% - 0.8rem);
+      width: calc(11rem - 0.8rem);
       left: 0.4rem;
       top: 0.4rem;
   }

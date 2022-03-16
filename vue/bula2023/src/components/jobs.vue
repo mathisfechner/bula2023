@@ -1,5 +1,5 @@
 <template>
-    <div id="Jobs" :class="[expanded ? 'cluster' : 'row']">
+    <div id="JobWrapper" :class="[expanded ? 'cluster' : 'row']">
         <div v-for="(value, key) in store.Jobs" :key="key">
             <button style="width: 100%; padding: 0" @click="expanded = (!expanded ? key : undefined)">
                 <span class="catTitle">
@@ -17,12 +17,14 @@
                         <span>{{job.efford}}</span>
                     </div>
                     <div class="contact">
-                        <span>Ansprechpartner: </span>
-                        <span>{{job.contact}}</span>
+                        <router-link :to="'/team#'+job.contact">
+                            <span>Ansprechpartner: </span>
+                            <span>{{job.contact}}</span>
+                        </router-link>
                     </div>
                 </div>
                 <div class="contactImage">
-                    <img :src="'/persons/'+job.contact+'.jpeg'" class="profilePicture" :alt="job.contact">
+                    <img :src="'/persons/'+job.contact+'.jpg'" class="profilePicture" :alt="job.contact">
                     <img :src="'/borderCycle.png'" class="profilePictureBorder">
                 </div>
             </div>

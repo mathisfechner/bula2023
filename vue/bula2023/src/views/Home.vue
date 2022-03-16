@@ -7,7 +7,7 @@
     <faq></faq>
     <h2>Jobs</h2>
     <jobs></jobs>
-    <h2>Karte</h2>
+    <h2>Lagerplatz</h2>
     <bu-la-map></bu-la-map>
   </main>
 </template>

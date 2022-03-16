@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>{{store.Map.description}}</p>
-        <svg class="dontrespond" width="100%" height="100%" viewBox="0 0 4678 3512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <svg width="100%" height="100%" viewBox="0 0 4678 3512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
             <g @click="selectedArea = undefined" style="pointer-events: all" transform="matrix(1.33242,0,0,1.33215,29.3333,167.957)">
                 <g id="Lagerplatz">
                     <use xlink:href="#_Image1" x="0" y="0" width="2913px" height="2254px"/>
@@ -1524,12 +1524,16 @@
         <p>{{store.Map[selectedArea]}}</p>
         <div class="flexRow">
             <div class="box">
-                <button :class="{'selected': selectedArea === 'Sportplatz'}" @click.stop="select($event,'Sportplatz')"><h4>Sportplatz</h4></button>
+                <button :class="{'selected': selectedArea === 'Bühne'}" @click.stop="select($event,'Bühne')"><h4>Bühne</h4></button>
+                <button :class="{'selected': selectedArea === 'ersteHilfe'}" @click.stop="select($event,'ersteHilfe')"><h4>Erste-Hilfe-Station</h4></button>
                 <button :class="{'selected': selectedArea === 'Waschhaus'}" @click.stop="select($event,'Waschhaus')"><h4>Waschhaus</h4></button>
+                <button :class="{'selected': selectedArea === 'Küche'}" @click.stop="select($event,'Küche')"><h4>Küche</h4></button>
             </div>
             <div class="box">
-                <button :class="{'selected': selectedArea === 'ersteHilfe'}" @click.stop="select($event,'ersteHilfe')"><h4>Erste Hilfe</h4></button>
-                <button :class="{'selected': selectedArea === 'Küche'}" @click.stop="select($event,'Küche')"><h4>Küche</h4></button>
+                <button :class="{'selected': selectedArea === 'Sportplatz'}" @click.stop="select($event,'Sportplatz')"><h4>Sportplatz</h4></button>
+                <button :class="{'selected': selectedArea === 'Info'}" @click.stop="select($event,'Info')"><h4>Info</h4></button>
+                <button :class="{'selected': selectedArea === 'Fahnenmast'}" @click.stop="select($event,'Fahnenmast')"><h4>Fahnenmast</h4></button>
+                <button :class="{'selected': selectedArea === 'Taverne'}" @click.stop="select($event,'Taverne')"><h4>Taverne</h4></button>
             </div>
         </div>
     </div>
@@ -1597,8 +1601,12 @@ button:hover {
 .hoverArea {
     fill-opacity: 0;
     pointer-events: all;
+    cursor: pointer;
 }
-.dontrespond {
+svg, .dontrespond {
     pointer-events: none;
+}
+svg {
+    cursor: crosshair;
 }
 </style>
