@@ -1,7 +1,7 @@
 <template>
-    <div id="JobWrapper" :class="[expanded ? 'cluster' : 'row']">
+    <div id="JobWrapper">
         <div v-for="(value, key) in store.Jobs" :key="key">
-            <button style="width: 100%; padding: 0" @click="expanded = (!expanded ? key : undefined)">
+            <button style="width: 100%; padding: 0" @click="expanded = (expanded!=key ? key : undefined)">
                 <span class="catTitle">
                     <h4>{{key}}</h4>
                     <span class="expandButton">{{expanded == key ? '-' : '+'}}</span>
