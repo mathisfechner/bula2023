@@ -6,12 +6,10 @@
       <img :src="'/borderCycle.png'" class="profilePictureBorder">
       <h4>{{person.name}}</h4>
       <h5>{{person.position}}</h5>
-      <template v-if="!expanded || isExpanded">
       <p>{{person.text}}</p>
       <div style="margin: auto 0 0 auto">
         <a v-if="person.mail" :href="'mailto:'+person.mail">Schreib mir</a>
       </div>
-      </template>
     </div>
     </div>
     <div v-if="!isExpanded" style="display: flex; justify-content: center">
