@@ -1521,7 +1521,7 @@
                 <image id="_Image205" width="129px" height="71px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAABHCAYAAAAgEST5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVR4nO2cTW4DIQyFSdVjdpGeLFn0oF0hTRAG29hgmPftIk2AwW8MNj8pAQAAAACA43m/Xz/v9+tndTvAYiAEAAAAAAAAAAAFCBUPhmPY/Ezt2W+PRgE5pXGez98/6f97/6HEAhEE5WowriDyf6QCesiaBrzgjtWUgXuepCUQeILNqBm7JqCW0cuh40hPoHWLK/Gctfe8wtGegCsGzfi7A5SXKN9xmSfw/Fqpr4pyjb1nvJkRu7fe68u78hrcuFaT3Gg9zynvxGRKT9hLRHClNalpPWNRJ1XuaULovc90EfSMHsUAUdpR8nz+/nGHrOuzrfdZ7gkyPVft5Q28sM7Tc42vmdNMFcFop8xeAImw4CL58lNqe1XqXZoiWN0BFDuN5SMTUW52cLQ91RDRK262NhKVBPFAs6DT+v9s45c5g2bG0Ct+9zDQTBFQdZb1cyZi2rJ7/7vajpMkyrAzhpylytmsaFNZZ/7dCzuldWif1/QHKQIqlBt1iycRLWKhvFAWKWW/7dcOuKtq1nVG8oo147fmACUfcwJO52le/mRvsJKaoal5genagWUuH8gps4ClcaV5hZSUySIYdgztUFJz+1kI2v2FKV2GA61hRyq/Kx7zFu22s5QM0sYRUqs74TVx7ZXZ8hZm0cGOW7p2x2pB6ZGSbzYPXsIHy4/NdRURAvjEynDW3vYBQ+mYkZSi6rUuM8ymkt0YPSyiwWu+9aVJLgA53EncClvAE0yCm8KVbJe3AiJwRjJvWCGAlC4iyBVhaJDv6KV+18qQbviYYY8PTwAB2FJLoEn2R86yR/MYGsLHPpzxnVrylXoFL7bfVDKDq9Esy/QsX0L3QOpdvYGVQcovvrY5dvUwzDqVDCHYEMHgNcQhYsSX2IWofae+n+Au3iGq4SxRTQxXL5zcRYCzUEcHq1bRyjakxNtVoyn/umvqZI8QfjjgdP7q42e7o147mNEpJ3d8JMwvrrL4KiMecDlZkG63l2mPh412dqTj6bsw9Qo7rwmcpi4NEIExnEMRXnWNcKIQlohgpgBa9WqACIyIEHuPXv1i2ZbVHHnBtQTra2V25PYiyEjEABHcgBmhbCQgggaaa+Z2BCJgEmEvoBcQgRCviz4BAGAt/7NDt9ZJdbgEAAAAAElFTkSuQmCC"/>
             </defs>
         </svg>
-        <p>{{store.Map[selectedArea]}}</p>
+        <p id="mapDescription">{{store.Map[selectedArea]}}</p>
         <div class="flexRow">
             <div class="box">
                 <button :class="{'selected': selectedArea === 'Bühne'}" @click.stop="select($event,'Bühne')"><h4>Bühne</h4></button>
@@ -1577,6 +1577,9 @@ button {
 }
 button:hover {
     text-decoration: underline;
+}
+#mapDescription{
+    font-weight: bold;
 }
 .flexRow {
     border-radius: 1rem;

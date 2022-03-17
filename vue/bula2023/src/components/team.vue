@@ -47,6 +47,9 @@ export default {
   overflow-y: scroll;
   display: flex;
   flex-direction: row;
+  h4 {
+    text-transform: uppercase;
+  }
   &.row {
     padding: 0 2rem;
     margin: 0 -2rem;
