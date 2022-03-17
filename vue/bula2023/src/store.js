@@ -152,12 +152,12 @@ let Store = reactive({
             {
                 title: "Mitarbeitende für das Team „Redaktionelles“", description: "Egal ob Rüstbrief, Lagerheft oder Texte für die Website - wir brauchen Menschen, die Spaß daran haben, sich auszudrücken und mit Wörtern zu spielen. Es wäre gut, wenn in diesem Bereich bereits Erfahrungen gesammelt wurden, damit sich der Korrekturaufwand in Grenzen hält.",
                 efford: "Eure Mithilfe wird vor dem Lager benötigt – auf dem Lager selbst habt ihr frei.",
-                contact: "Rike"
+                contact: "Melisa"
             },
             {
                 title: "Mitarbeitende für das Instagram-Team", description: "Du bist gerne in den sozialen Medien unterwegs und hast Spaß daran, dir kreative Texte auszudenken, langfristig zu planen und unseren BuLa-Account zu bespielen? Dann ist das genau die richtige Aufgabe für dich.",
                 efford: "Vor und/oder auf dem Lager – je mehr mitmachen, desto besser können wir die Arbeit aufteilen.",
-                contact: "Rike"
+                contact: "Theresa"
             },
             {
                 title: "Comiczeichner/Comiczeichnerin",
@@ -169,7 +169,7 @@ let Store = reactive({
                 title: "Erarbeitung von Sippenstundenentwürfen",
                 description: "Du hast kreative Ideen für Sippenstunden, mit denen wir im Vorfeld des BuLas Jupfis und Pfadis auf das BuLa-Thema einstimmen können? Du hast Spaß daran, daraus Stundenentwürfe für unterschiedliche Altersstufen zu entwickeln? Dann werde aktiv und hilf mit bei der Erarbeitung von Sippenstundenentwürfen! Damit es nicht zu viel für eine Person wird, planen wir, diese Aufgabe auf mehrere Schultern zu verteilen.",
                 efford: "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
-                contact: "Rike"
+                contact: "Melisa"
             }
         ],
         "PROGRAMM": [
@@ -177,7 +177,7 @@ let Store = reactive({
                 title: "Singewettstreit",
                 description: "Wie vergangenes BuLa würden wir gerne wieder einen Singewettstreit veranstalten. Abgesehen von der Jury brauchen wir dafür Leute, die den Abend organisieren und koordinieren. Das bedeutet die Einteilung in Kategorien, die Annahme von Bewerbungen und die Durchführung an dem Abend. Gerne kann sich hierfür auch eine Gruppe von Freunden oder ein Stamm bereiterklären.",
                 efford: "Vorbereitung im Vorfeld des Lagers, ansonsten während des Lagers. Nach dem Singewettstreit habt ihr frei.",
-                contact: "Rike"
+                contact: "Theresa"
             },
             {
                 title: "Markttag",
@@ -189,7 +189,7 @@ let Store = reactive({
                 title: "Eröffnungsabend",
                 description: "Auch für den Eröffnungsabend brauchen wir im besten Fall einen Stamm, der sich um die Abendgestaltung kümmert. Hier dürfen Spiele und die Einführung in die Geschichte natürlich nicht fehlen. Auch hierbei stehen wir euch mit Ideen, Rat und Tat zur Seite.",
                 efford: "Vorbereitung im Vorfeld des Lagers, ansonsten während des am Eröffnungsabend (Sonntagabend). Danach habt ihr frei.",
-                contact: "Rike"
+                contact: "Theresa"
             },
             {
                 title: "Team für den Bunten Abend",
@@ -203,7 +203,7 @@ let Store = reactive({
                 title: "Mitarbeitende in der BuLa-Kita",
                 description: "Erstmals wird es eine BuLa-Kita geben, für die wir noch Mitarbeitende suchen. Wenn du eine pädagogische Ausbildung hast, wäre das natürlich super, aber auch, wenn du einfach Spaß an der Arbeit mit kleinen Kindern hast, bist du willkommen im Team. Zu welchen Zeiten und für welche Altersgruppen die BuLa-Kita offen hat, wird festgelegt, sobald der Bedarf klar ist.",
                 efford: "Abgesehen von einer digitalen Vorbesprechung: auf dem Lager. Die Schichten werden so eingeteilt, dass ihr auch euren sonstigen Verpflichtungen nachgehen könnt.",
-                contact: "Rike"
+                contact: "Melisa"
             },
             {
                 title: "Organisation des Shuttle-Services für die An- und Abreise",
@@ -215,13 +215,13 @@ let Store = reactive({
                 title: "Betreuung der Jupfi- und Pfadi-Reporter",
                 description: "Die Lagerzeitung wird in diesem Jahr nicht nur von Rovern und Altpfadfindern gestaltet, sondern auch von Jupfi- und Pfadfinderreportern, die sich vor dem BuLa bewerben können. Damit diese nicht völlig auf sich allein gestellt sind, brauchen wir dich! Du betreust die Jupfi- und Pfadireporter, unterstützt sie und stehst ihnen mit Rat und Tat zur Seite.",
                 efford: "Kurze Vorbereitung vor dem Lager. An einzelnen Tagen auf dem Lager. Je mehr Menschen mitmachen, desto seltener bist du dran.",
-                contact: "Rike"
+                contact: "Melisa"
             },
             {
                 title: "Team für den Hindernis-Spenden-Lauf",
                 description: "Auf dem Lager wird es einen Hindernis-Spenden-Lauf geben, der sich nur als ganze Sippe bewältigen lassen soll. Für jede Sippe, die den Lauf erfolgreich absolviert, werden unsere Sponsoren an ein Projekt spenden. Wir suchen ein Team, dass den Hindernis-Parcours aufbaut und organisiert. Da die Sippen über das Lager verteilt in ihrer freien Zeit teilnehmen können sollen, werdet ihr bei der Betreuung – soweit gewünscht – vom Rover-Bereitschaftsdienst unterstützt.",
                 efford: "Planung des Konzepts vor dem Lager, ansonsten vor allem auf dem Lager. Aufbau während des Vorlagers wünschenswert, aber kein Muss.",
-                contact: "Rike"
+                contact: "Theresa"
             },
             {
                 title: "Schauspiel-Team",
