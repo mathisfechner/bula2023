@@ -13,7 +13,7 @@
     </div>
     </div>
     <div v-if="!isExpanded" style="display: flex; justify-content: center">
-      <button class="expandButton" @click="expanded = !expanded">{{expandButtonContent}}</button>
+      <button id="jobExpandButton" class="expandButton" @click="changeExpansion">{{expandButtonContent}}</button>
     </div>
   </div>
 </template>
@@ -30,6 +30,15 @@ export default {
   computed: {
     expandButtonContent: function() {
       return this.expanded ? '–' : '+';
+    }
+  },
+  methods: {
+    changeExpansion: function() {
+      this.expanded = !this.expanded;
+      if (!this.expanded) {
+        console.log(this.$route);
+        this.$router.push(this.$route.path+'#jobExpandButton')
+      }
     }
   },
   data() {
