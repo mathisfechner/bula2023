@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Corporate S W10';
+    src: url('CorporateSW10-Light.eot');
+    src: local('Corporate S W10 Light'), local('CorporateSW10-Light'),
+        url('CorporateSW10-Light.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-Light.woff2') format('woff2'),
+        url('CorporateSW10-Light.woff') format('woff'),
+        url('CorporateSW10-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate S W10';
+    src: url('CorporateSW10-LightItalic.eot');
+    src: local('Corporate S W10 Light Italic'), local('CorporateSW10-LightItalic'),
+        url('CorporateSW10-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-LightItalic.woff2') format('woff2'),
+        url('CorporateSW10-LightItalic.woff') format('woff'),
+        url('CorporateSW10-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S W10';
+    src: url('CorporateSW10-BoldItalic.eot');
+    src: local('Corporate S W10 Bold Italic'), local('CorporateSW10-BoldItalic'),
+        url('CorporateSW10-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-BoldItalic.woff2') format('woff2'),
+        url('CorporateSW10-BoldItalic.woff') format('woff'),
+        url('CorporateSW10-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S W10';
+    src: url('CorporateSW10-Regular.eot');
+    src: local('Corporate S W10 Regular'), local('CorporateSW10-Regular'),
+        url('CorporateSW10-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-Regular.woff2') format('woff2'),
+        url('CorporateSW10-Regular.woff') format('woff'),
+        url('CorporateSW10-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate S W10';
+    src: url('CorporateSW10-Bold.eot');
+    src: local('Corporate S W10 Bold'), local('CorporateSW10-Bold'),
+        url('CorporateSW10-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-Bold.woff2') format('woff2'),
+        url('CorporateSW10-Bold.woff') format('woff'),
+        url('CorporateSW10-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate S';
+    src: url('CorporateS.eot');
+    src: local('Corporate S'), local('CorporateS'),
+        url('CorporateS.eot?#iefix') format('embedded-opentype'),
+        url('CorporateS.woff2') format('woff2'),
+        url('CorporateS.woff') format('woff'),
+        url('CorporateS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate S W10 XBold';
+    src: url('CorporateSW10-XBoldItalic.eot');
+    src: local('Corporate S W10 XBold Italic'), local('CorporateSW10-XBoldItalic'),
+        url('CorporateSW10-XBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-XBoldItalic.woff2') format('woff2'),
+        url('CorporateSW10-XBoldItalic.woff') format('woff'),
+        url('CorporateSW10-XBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S W10 Demi';
+    src: url('CorporateSW10-DemiItalic.eot');
+    src: local('Corporate S W10 Demi Italic'), local('CorporateSW10-DemiItalic'),
+        url('CorporateSW10-DemiItalic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-DemiItalic.woff2') format('woff2'),
+        url('CorporateSW10-DemiItalic.woff') format('woff'),
+        url('CorporateSW10-DemiItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S W10 XBold';
+    src: url('CorporateSW10-XBold.eot');
+    src: local('Corporate S W10 XBold'), local('CorporateSW10-XBold'),
+        url('CorporateSW10-XBold.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-XBold.woff2') format('woff2'),
+        url('CorporateSW10-XBold.woff') format('woff'),
+        url('CorporateSW10-XBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate S';
+    src: url('CorporateS-BoldItalic.eot');
+    src: local('Corporate S Bold Italic'), local('CorporateS-BoldItalic'),
+        url('CorporateS-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateS-BoldItalic.woff2') format('woff2'),
+        url('CorporateS-BoldItalic.woff') format('woff'),
+        url('CorporateS-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S W10 Md';
+    src: url('CorporateSW10-MdItalic.eot');
+    src: local('Corporate S W10 Md Italic'), local('CorporateSW10-MdItalic'),
+        url('CorporateSW10-MdItalic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-MdItalic.woff2') format('woff2'),
+        url('CorporateSW10-MdItalic.woff') format('woff'),
+        url('CorporateSW10-MdItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S W10 Demi';
+    src: url('CorporateSW10-Demi.eot');
+    src: local('Corporate S W10 Demi'), local('CorporateSW10-Demi'),
+        url('CorporateSW10-Demi.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-Demi.woff2') format('woff2'),
+        url('CorporateSW10-Demi.woff') format('woff'),
+        url('CorporateSW10-Demi.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate S';
+    src: url('CorporateS-Bold.eot');
+    src: local('Corporate S Bold'), local('CorporateS-Bold'),
+        url('CorporateS-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CorporateS-Bold.woff2') format('woff2'),
+        url('CorporateS-Bold.woff') format('woff'),
+        url('CorporateS-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corporate S W10';
+    src: url('CorporateSW10-Italic.eot');
+    src: local('Corporate S W10 Italic'), local('CorporateSW10-Italic'),
+        url('CorporateSW10-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-Italic.woff2') format('woff2'),
+        url('CorporateSW10-Italic.woff') format('woff'),
+        url('CorporateSW10-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S';
+    src: url('CorporateS-Italic.eot');
+    src: local('Corporate S Italic'), local('CorporateS-Italic'),
+        url('CorporateS-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CorporateS-Italic.woff2') format('woff2'),
+        url('CorporateS-Italic.woff') format('woff'),
+        url('CorporateS-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Corporate S W10 Md';
+    src: url('CorporateSW10-Md.eot');
+    src: local('Corporate S W10 Md'), local('CorporateSW10-Md'),
+        url('CorporateSW10-Md.eot?#iefix') format('embedded-opentype'),
+        url('CorporateSW10-Md.woff2') format('woff2'),
+        url('CorporateSW10-Md.woff') format('woff'),
+        url('CorporateSW10-Md.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

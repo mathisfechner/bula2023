@@ -66,6 +66,9 @@ export default {
     margin: 0 1rem;
     min-width: 2.5rem;
     text-align: center;
+    h4 {
+        font-weight: 300;
+    }
 }
 .days {
     .text-shadow(#E3C08C);

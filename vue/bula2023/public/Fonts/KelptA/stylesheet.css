@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-ExtraLightItalic.eot');
+    src: local('Kelpt A1 ExtraLight Italic'), local('KelptA1-ExtraLightItalic'),
+        url('KelptA1-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-ExtraLightItalic.woff2') format('woff2'),
+        url('KelptA1-ExtraLightItalic.woff') format('woff'),
+        url('KelptA1-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-ExtraLight.eot');
+    src: local('Kelpt A1 ExtraLight'), local('KelptA1-ExtraLight'),
+        url('KelptA1-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-ExtraLight.woff2') format('woff2'),
+        url('KelptA1-ExtraLight.woff') format('woff'),
+        url('KelptA1-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-ExtraBold.eot');
+    src: local('Kelpt A1 ExtraBold'), local('KelptA1-ExtraBold'),
+        url('KelptA1-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-ExtraBold.woff2') format('woff2'),
+        url('KelptA1-ExtraBold.woff') format('woff'),
+        url('KelptA1-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-Light.eot');
+    src: local('Kelpt A1 Light'), local('KelptA1-Light'),
+        url('KelptA1-Light.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-Light.woff2') format('woff2'),
+        url('KelptA1-Light.woff') format('woff'),
+        url('KelptA1-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-LightItalic.eot');
+    src: local('Kelpt A1 Light Italic'), local('KelptA1-LightItalic'),
+        url('KelptA1-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-LightItalic.woff2') format('woff2'),
+        url('KelptA1-LightItalic.woff') format('woff'),
+        url('KelptA1-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-Bold.eot');
+    src: local('Kelpt A1 Bold'), local('KelptA1-Bold'),
+        url('KelptA1-Bold.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-Bold.woff2') format('woff2'),
+        url('KelptA1-Bold.woff') format('woff'),
+        url('KelptA1-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-BlackItalic.eot');
+    src: local('Kelpt A1 Black Italic'), local('KelptA1-BlackItalic'),
+        url('KelptA1-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-BlackItalic.woff2') format('woff2'),
+        url('KelptA1-BlackItalic.woff') format('woff'),
+        url('KelptA1-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-ExtraBoldItalic.eot');
+    src: local('Kelpt A1 ExtraBold Italic'), local('KelptA1-ExtraBoldItalic'),
+        url('KelptA1-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-ExtraBoldItalic.woff2') format('woff2'),
+        url('KelptA1-ExtraBoldItalic.woff') format('woff'),
+        url('KelptA1-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-Black.eot');
+    src: local('Kelpt A1 Black'), local('KelptA1-Black'),
+        url('KelptA1-Black.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-Black.woff2') format('woff2'),
+        url('KelptA1-Black.woff') format('woff'),
+        url('KelptA1-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-BoldItalic.eot');
+    src: local('Kelpt A1 Bold Italic'), local('KelptA1-BoldItalic'),
+        url('KelptA1-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-BoldItalic.woff2') format('woff2'),
+        url('KelptA1-BoldItalic.woff') format('woff'),
+        url('KelptA1-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-MediumItalic.eot');
+    src: local('Kelpt A1 Medium Italic'), local('KelptA1-MediumItalic'),
+        url('KelptA1-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-MediumItalic.woff2') format('woff2'),
+        url('KelptA1-MediumItalic.woff') format('woff'),
+        url('KelptA1-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-ThinItalic.eot');
+    src: local('Kelpt A1 Thin Italic'), local('KelptA1-ThinItalic'),
+        url('KelptA1-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-ThinItalic.woff2') format('woff2'),
+        url('KelptA1-ThinItalic.woff') format('woff'),
+        url('KelptA1-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-Italic.eot');
+    src: local('Kelpt A1 Italic'), local('KelptA1-Italic'),
+        url('KelptA1-Italic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-Italic.woff2') format('woff2'),
+        url('KelptA1-Italic.woff') format('woff'),
+        url('KelptA1-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-Thin.eot');
+    src: local('Kelpt A1 Thin'), local('KelptA1-Thin'),
+        url('KelptA1-Thin.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-Thin.woff2') format('woff2'),
+        url('KelptA1-Thin.woff') format('woff'),
+        url('KelptA1-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-Medium.eot');
+    src: local('Kelpt A1 Medium'), local('KelptA1-Medium'),
+        url('KelptA1-Medium.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-Medium.woff2') format('woff2'),
+        url('KelptA1-Medium.woff') format('woff'),
+        url('KelptA1-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1';
+    src: url('KelptA1-Regular.eot');
+    src: local('Kelpt A1 Regular'), local('KelptA1-Regular'),
+        url('KelptA1-Regular.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-Regular.woff2') format('woff2'),
+        url('KelptA1-Regular.woff') format('woff'),
+        url('KelptA1-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1 SemiLight';
+    src: url('KelptA1-SemiLightItalic.eot');
+    src: local('Kelpt A1 SemiLight Italic'), local('KelptA1-SemiLightItalic'),
+        url('KelptA1-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-SemiLightItalic.woff2') format('woff2'),
+        url('KelptA1-SemiLightItalic.woff') format('woff'),
+        url('KelptA1-SemiLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kelpt A1 SemiLight';
+    src: url('KelptA1-SemiLight.eot');
+    src: local('Kelpt A1 SemiLight'), local('KelptA1-SemiLight'),
+        url('KelptA1-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('KelptA1-SemiLight.woff2') format('woff2'),
+        url('KelptA1-SemiLight.woff') format('woff'),
+        url('KelptA1-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
