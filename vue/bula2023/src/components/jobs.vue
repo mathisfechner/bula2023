@@ -18,7 +18,7 @@
                     </div>
                     <div class="contact">
                         <router-link :to="'/team#'+job.contact">
-                            <span>Ansprechperson: </span>
+                            <span>Ansprechpersong: </span>
                             <span>{{job.contact}}</span>
                         </router-link>
                     </div>

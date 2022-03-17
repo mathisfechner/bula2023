@@ -8,9 +8,9 @@ let Store = reactive({
         ]
     },
     Team: [
-        {name: "Rike", position: "Lagerleitung", text: "Gilt in der Pfadfinderschaft als lebende Legende und hat immer eine Geschichte parat. Auf dem BuLa hätte sie gern ein eigenes Trampolin.", mail:"lagerleitung@bula2023.de"},
-        {name: "Melisa", position: "Lagerleitung", text: "Bekannt für ihre hohen Qualitätsansprüche. Wünscht sich für das BuLa ein richtiges Schwert und hofft, dass sie auch mal auf Rikes Trampolin darf.", mail:"lagerleitung@bula2023.de"},
-        {name: "Theresa", position: "Lagerleitung", text:"Mag Zahlen. Hat daher ein Auge auf die Finanzen, wenn sich Rike und Melisa ständig teuren Schwachsinn für’s BuLa wünschen.", mail:"lagerleitung@bula2023.de"},
+        {name: "Rike", position: "Lagerleitung", text: "Gilt in der Pfadfinderschaft als lebende Legende und hat immer eine Geschichte parat. Auf dem BuLa hätte sie gern ein eigenes Trampolin.", mail:"bula2023@bps-pfadfinder.de"},
+        {name: "Melisa", position: "Lagerleitung", text: "Bekannt für ihre hohen Qualitätsansprüche. Wünscht sich für das BuLa ein richtiges Schwert und hofft, dass sie auch mal auf Rikes Trampolin darf.", mail:"bula2023@bps-pfadfinder.de"},
+        {name: "Theresa", position: "Lagerleitung", text:"Mag Zahlen. Hat daher ein Auge auf die Finanzen, wenn sich Rike und Melisa ständig teuren Schwachsinn für’s BuLa wünschen.", mail:"bula2023@bps-pfadfinder.de"},
         {name: "Justus", position: "Küche", text: "Kocht auch nur mit Wasser. Dafür geben noch Mia, Caro und Mathis aus Hannover ihren Senf dazu."},
         {name: "Jonathan", position: "Geistliches", text:"Leidenschaftlicher Theologe und Maultaschenliebhaber. Predigt gern mit einer Axt in der Hand."},
         {name: "Mara", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei Christopher und dem größten Stamm der BPS unterstützt."},
@@ -20,7 +20,7 @@ let Store = reactive({
         {name:"Mello", position:"Brieffreundschaften", text:"Knüpft lieber Kontakte als Knoten. Vernetzt Briefmarkensammler und Schreiberlinge quer durch den Bund."},
         {name:"Lotte", position:"Brieffreundschaften", text:"Knüpft lieber Kontakte als Knoten. Vernetzt Briefmarkensammler und Schreiberlinge quer durch den Bund."},
         {name:"woody", position:"Großbauten", text:"Begeisterter Hochstapler. Arbeitet vorzugsweise mit Holz, Seil und Schwarzzeltmaterial."},
-        {name:"Martin", position:"Holz", text:"Kann alles, außer nein sagen. Ist quasi der Blitzableiter der Lagerleitung."}
+        {name:"malu", position:"Bau- und Brennholz", text:"Kann alles, außer nein sagen. Ist quasi der Blitzableiter der Lagerleitung."}
     ],
     FAQ: {
         categories: {
@@ -198,7 +198,7 @@ let Store = reactive({
                 contact: "Rike"
             },
         ],
-        "DIES UND DAS AUF DEM LAGER": [
+        "DIES UND DAS RUND UMS LAGER": [
             {
                 title: "Mitarbeitende in der BuLa-Kita",
                 description: "Erstmals wird es eine BuLa-Kita geben, für die wir noch Mitarbeitende suchen. Wenn du eine pädagogische Ausbildung hast, wäre das natürlich super, aber auch, wenn du einfach Spaß an der Arbeit mit kleinen Kindern hast, bist du willkommen im Team. Zu welchen Zeiten und für welche Altersgruppen die BuLa-Kita offen hat, wird festgelegt, sobald der Bedarf klar ist.",
