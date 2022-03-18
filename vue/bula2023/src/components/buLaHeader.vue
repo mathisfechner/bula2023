@@ -63,9 +63,9 @@ export default {
       this.$refs.logoRight.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
       this.$refs.logoRight.style.height = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
 
-      this.$refs.burgerMenu.style.fontSize = Math.max(4 - 1 * scrollY / (2 * rem), 3) + "rem";
+      this.$refs.burgerMenu.style.fontSize = Math.max(5 - 1 * scrollY / (2 * rem), 4) + "rem";
       this.$refs.burgerMenu.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
-      this.$refs.burgerMenu.style.height = Math.max(3 - 3/4 * scrollY / (2 * rem), 3-3/4) + "rem";
+      this.$refs.burgerMenu.style.height = Math.max(2.5 - 3/4 * scrollY / (2 * rem), 2.5-3/4) + "rem";
       this.$refs.burgerMenu.style.marginTop = Math.min(-1.5 + 0.75 * scrollY / (2 * rem), -0.75) + "rem";
       this.initialised = true;
 
@@ -141,7 +141,7 @@ header {
     .transition();
   }
   #burgerMenu {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: -1.5rem;
     height: 3rem;
     width: 8rem; //gleich Breit wie Logo, damit BuLa zentriert ist
@@ -196,7 +196,7 @@ header {
     }
     #burgerMenu {
       width: 3rem !important;
-      font-size: 3rem !important;
+      font-size: 4rem !important;
       height: 2.25rem !important;
       margin-top: -.75rem !important;
     }
