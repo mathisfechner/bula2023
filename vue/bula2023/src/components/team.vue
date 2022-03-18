@@ -2,7 +2,7 @@
   <div>
     <div id="Team" :class="[expanded ? 'cluster' : 'row']">
     <div :id="person.name" class="teamMate" v-for="person in team" :key="person.name">
-      <img :src="'/persons/'+person.name+'.jpg'" class="profilePicture" :alt="person.name">
+      <img :src="'/persons/'+person.name+'.jpg'" onerror="this.onerror=null;this.src='/persons/undefined.jpg'" class="profilePicture" :alt="person.name">
       <img :src="'/borderCycle.png'" class="profilePictureBorder">
       <h4>{{person.name}}</h4>
       <h5>{{person.position}}</h5>

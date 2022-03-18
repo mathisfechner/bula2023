@@ -1,6 +1,8 @@
 <template>
     <header>
-        <img ref="logoTop" id="logoTop" class="logo" src="/logo.png" alt="BuLa Logo">
+        <svg @click="$router.push('/')" ref="logoTop" id="logoTop" class="logo" width="2.5rem" height="2.5rem" alt="BuLa Logo">
+            <use href="#bulaLogoContents"/>
+          </svg>
         <div id="headerRow" :class="{'showOptions': showOptions}">
           <button ref="burgerMenu" id="burgerMenu" :class="{'showOptions': showOptions}" @click.stop="toggleMenu">
               <span aria-hidden="true">–</span>
@@ -8,7 +10,9 @@
               <span aria-hidden="true">–</span>
           </button>
           <router-link to="/" tabindex="1"><h1 ref="BuLa">BuLa</h1></router-link>
-          <img @click="$router.push('/')" ref="logoRight" id="logoRight" :class="{'logo': true, 'showOptions': showOptions}" style="cursor:pointer" src="/logo.png" alt="BuLa Logo">
+          <svg @click="$router.push('/')" :class="{'logo': true, 'showOptions': showOptions}" style="cursor:pointer" ref="logoRight" id="logoRight" width="2.5rem" height="2.5rem" alt="BuLa Logo">
+            <use href="#bulaLogoContents"/>
+          </svg>
         </div>
         <nav :class="{'displayMenu': displayMenu}" :aria-hidden="!displayMenu">
           <router-link to="/team" :tabindex="displayMenu ? 0 : -1">Team | Jobs</router-link>
