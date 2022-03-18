@@ -13,7 +13,7 @@ let Store = reactive({
         {name: "Theresa", position: "Lagerleitung", text:"Mag Zahlen. Hat daher ein Auge auf die Finanzen, wenn sich Rike und Melisa ständig teuren Schwachsinn für’s BuLa wünschen.", mail:"bula2023@bps-pfadfinder.de"},
         {name: "Justus", position: "Küche", text: "Kocht auch nur mit Wasser. Dafür geben noch Mia, Caro und Mathis aus Hannover ihren Senf dazu."},
         {name: "Jonathan", position: "Geistliches", text:"Leidenschaftlicher Theologe und Maultaschenliebhaber. Predigt gern mit einer Axt in der Hand."},
-        {name: "Mara", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei Christopher und dem größten Stamm der BPS unterstützt."},
+        {name: "Mara", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei von Christopher und dem größten Stamm der BPS unterstützt."},
         {name: "Christopher", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei von Mara und dem größten Stamm der BPS unterstützt."},
         {name: "Marten", position:"Design", text:"Unser Mann für’s Schöne. Außerdem für die Gestaltung der Website und das Corporate Design zuständig."},
         {name:"Mathis", position:"Website", text:"Hätte als Einziger verhindern können, dass er hier erwähnt wird. Empfiehlt außerdem bei technischen Notfällen, das Gerät aus- und wieder anzuschalten."},

@@ -204,6 +204,7 @@ header {
   }
   #headerRow.showOptions {
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     background-color: #FFFFFF55;
   }
 }
