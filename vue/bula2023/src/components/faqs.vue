@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>FAQ</h2>
     <div class="flexRow">
       <faq :tag="'teilnehmende'"></faq>
       <faq :tag="'eltern'"></faq>

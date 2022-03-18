@@ -161,7 +161,7 @@ header {
     height: 8rem;
     width: 8rem;
   }
-  #logoTop {display: none;}; 
+  #logoTop {display: none; pointer-events: all}; 
 
   @media (min-width: 28*16px) {
     #headerRow {

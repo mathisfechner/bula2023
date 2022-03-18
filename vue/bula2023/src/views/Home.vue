@@ -2,12 +2,13 @@
   <main>
     <countdown></countdown>
     <willkommen></willkommen>
-    <h2>Team</h2>
+    <h2 @click="$router.push('/team')" class="linkingHeadline">Team</h2>
     <team :team="store.Team"></team>
+    <h2 @click="$router.push('/faq')" class="linkingHeadline">FAQ</h2>
     <faq></faq>
-    <h2>Jobs</h2>
+    <h2 @click="$router.push('/team#jobs')" class="linkingHeadline">Jobs</h2>
     <jobs></jobs>
-    <h2>Lagerplatz</h2>
+    <h2 @click="$router.push('/lagerplatz')" class="linkingHeadline">Lagerplatz</h2>
     <bu-la-map></bu-la-map>
   </main>
 </template>
@@ -34,5 +35,7 @@ export default {
 </script>
 
 <style lang="less">
-
+.linkingHeadline {
+  cursor: pointer;
+}
 </style>
