@@ -38,7 +38,6 @@ export default {
     toggleMenu: function(e) {
       this.displayMenu = !this.displayMenu;
       if (this.displayMenu) {
-        console.log(e.pointerType);
         if (e.pointerType=="touch") {
           window.addEventListener("touchstart", () => {
             this.displayMenu = false;
