@@ -22,16 +22,28 @@
             </g>
             <g id="HoverAreas">
                 <g id="Küche" class="hoverArea" @click="selectedArea='Küche'" title="Küche" transform="matrix(1.2995,0,0,1.14544,-770.199,-376.432)">
-                    <path :class="{'selected': selectedArea === 'Küche'}" d="M2398.4,2514.6C2426.92,2458.92 2693.68,2455.68 2722.67,2491.85C2759.65,2537.99 2811.56,2757.81 2764,2776.41C2719.36,2793.86 2778.7,2940.16 2738.31,2965.96C2682.42,3001.64 2503.46,3027.11 2450.99,2983.31C2414.96,2953.24 2377.23,2555.94 2398.4,2514.6Z" style="fill:rgb(183,73,73);"/>
+                    <path :class="{'selected': selectedArea === 'Küche'}" d="M1779.22,1367.93C1807.73,1312.25 2079.71,1432.92 2108.69,1469.09C2145.68,1515.24 2089.41,1704.21 2049.02,1730C1993.13,1765.68 1788.23,1677.79 1735.76,1633.99C1699.74,1603.92 1758.05,1409.27 1779.22,1367.93Z" style="fill:rgb(183,73,73);"/>
                 </g>
                 <g id="Sportplatz" class="hoverArea" @click="selectedArea='Sportplatz'" title="Sportplatz" transform="matrix(1.2995,0,0,1.14544,-2201.53,-775.955)">
-                    <path :class="{'selected': selectedArea === 'Sportplatz'}" d="M2276.21,2310.44C2304.73,2254.76 2541.5,2281.73 2570.49,2317.89C2607.47,2364.04 2517.76,2476.3 2470.2,2494.9C2425.56,2512.36 2425.76,2683.7 2385.37,2709.49C2329.48,2745.17 2194.72,2670.97 2142.25,2627.17C2106.23,2597.1 2255.04,2351.78 2276.21,2310.44Z" style="fill:rgb(183,73,73);"/>
+                    <path :class="{'selected': selectedArea === 'Sportplatz'}" d="M2203.79,2310.63C2260.25,2295.07 2572.92,2364.96 2581.18,2405.43C2597.01,2483.03 2510.65,2635.91 2470.2,2657.84C2411.91,2689.44 2127.84,2585.22 2075.37,2541.42C2039.34,2511.35 2145.19,2326.78 2203.79,2310.63Z" style="fill:rgb(183,73,73);"/>
                 </g>
-                <g id="ersteHilfe" class="hoverArea" @click="selectedArea='ersteHilfe'" title="Erste Hilfe" transform="matrix(1.2995,0,0,1.14544,-816.737,-1326.26)">
-                    <path :class="{'selected': selectedArea === 'ersteHilfe'}" d="M2459.21,2270.76C2515.93,2268.12 2594.7,2419.55 2586.77,2467.6C2576.1,2532.22 2366.92,2590.48 2302.07,2577.13C2238.97,2564.14 2167.63,2438.86 2171.72,2387.66C2175.75,2337.13 2406.3,2273.23 2459.21,2270.76Z" style="fill:rgb(183,73,73);"/>
+                <g id="ersteHilfe" class="hoverArea" @click="selectedArea='ersteHilfe'" transform="matrix(1.14791,0,0,0.908471,-456.897,-756.53)">
+                    <path :class="{'selected': selectedArea === 'ersteHilfe'}" d="M2459.21,2270.76C2515.93,2268.12 2594.7,2419.55 2586.77,2467.6C2576.1,2532.22 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2318.19,2399.79 2322.28,2348.59C2326.31,2298.06 2406.3,2273.23 2459.21,2270.76Z" style="fill:rgb(183,73,73);"/>
                 </g>
-                <g id="Waschhaus" class="hoverArea" @click="selectedArea='Waschhaus'" title="Waschhause" serif:id="ersteHIlfe" transform="matrix(1.2995,0,0,1.14544,-661.268,-1667.05)">
-                    <path :class="{'selected': selectedArea === 'Waschhaus'}" d="M2379.43,2134.3C2436.15,2131.66 2617.24,2350.9 2609.31,2398.95C2598.65,2463.57 2470.08,2519.91 2405.23,2506.56C2342.13,2493.57 2181.59,2264.02 2185.68,2212.82C2189.71,2162.28 2326.53,2136.77 2379.43,2134.3Z" style="fill:rgb(183,73,73);"/>
+                <g id="Info" class="hoverArea" @click="selectedArea='Info'" transform="matrix(1.14791,0,0,0.908471,-609.116,-704.248)">
+                    <path :class="{'selected': selectedArea === 'Info'}" d="M2459.21,2270.76C2515.93,2268.12 2594.7,2419.55 2586.77,2467.6C2576.1,2532.22 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2318.19,2399.79 2322.28,2348.59C2326.31,2298.06 2406.3,2273.23 2459.21,2270.76Z" style="fill:rgb(183,73,73);"/>
+                </g>
+                <g id="Fahnenmast" class="hoverArea" @click="selectedArea='Fahnenmast'" transform="matrix(1.14791,0,0,0.908471,-566.498,-256.495)">
+                    <path :class="{'selected': selectedArea === 'Fahnenmast'}" d="M2459.21,2270.76C2515.93,2268.12 2594.7,2419.55 2586.77,2467.6C2576.1,2532.22 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2318.19,2399.79 2322.28,2348.59C2326.31,2298.06 2406.3,2273.23 2459.21,2270.76Z" style="fill:rgb(183,73,73);"/>
+                </g>
+                <g id="Bühne" class="hoverArea" @click="selectedArea='Bühne'" transform="matrix(0.997617,-0.567845,0.449402,0.78953,-889.734,1078.46)">
+                    <path :class="{'selected': selectedArea === 'Bühne'}" d="M2445.83,2270.06C2502.54,2267.42 2578.9,2426.71 2570.97,2474.75C2560.31,2539.38 2436.94,2599.38 2372.08,2586.03C2308.98,2573.04 2227.08,2371.1 2251.53,2329.94C2278.07,2285.24 2392.92,2272.53 2445.83,2270.06Z" style="fill:rgb(183,73,73);"/>
+                </g>
+                <g id="Taverne" class="hoverArea" @click="selectedArea='Taverne'" transform="matrix(1.2995,0,0,1.14544,-513.745,-1541.5)">
+                    <path :class="{'selected': selectedArea === 'Taverne'}" d="M2379.43,2134.3C2436.15,2131.66 2538.8,2236.43 2530.87,2284.47C2520.2,2349.09 2391.64,2405.43 2326.78,2392.09C2263.68,2379.1 2181.59,2264.02 2185.68,2212.82C2189.71,2162.28 2326.53,2136.77 2379.43,2134.3Z" style="fill:rgb(183,73,73);"/>
+                </g>
+                <g id="Waschhaus" class="hoverArea" @click="selectedArea='Waschhaus'" transform="matrix(1.2995,0,0,1.14544,-661.268,-1667.05)">
+                    <path :class="{'selected': selectedArea === 'Waschhaus'}" d="M2379.43,2134.3C2436.15,2131.66 2538.8,2236.43 2530.87,2284.47C2520.2,2349.09 2391.64,2405.43 2326.78,2392.09C2263.68,2379.1 2181.59,2264.02 2185.68,2212.82C2189.71,2162.28 2326.53,2136.77 2379.43,2134.3Z" style="fill:rgb(183,73,73);"/>
                 </g>
             </g>
             <g id="Gebäude_Farbe" transform="matrix(5.55556,0,0,5.55556,0,0)">
@@ -1521,6 +1533,7 @@
                 <image id="_Image205" width="129px" height="71px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAABHCAYAAAAgEST5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVR4nO2cTW4DIQyFSdVjdpGeLFn0oF0hTRAG29hgmPftIk2AwW8MNj8pAQAAAACA43m/Xz/v9+tndTvAYiAEAAAAAAAAAAAFCBUPhmPY/Ezt2W+PRgE5pXGez98/6f97/6HEAhEE5WowriDyf6QCesiaBrzgjtWUgXuepCUQeILNqBm7JqCW0cuh40hPoHWLK/Gctfe8wtGegCsGzfi7A5SXKN9xmSfw/Fqpr4pyjb1nvJkRu7fe68u78hrcuFaT3Gg9zynvxGRKT9hLRHClNalpPWNRJ1XuaULovc90EfSMHsUAUdpR8nz+/nGHrOuzrfdZ7gkyPVft5Q28sM7Tc42vmdNMFcFop8xeAImw4CL58lNqe1XqXZoiWN0BFDuN5SMTUW52cLQ91RDRK262NhKVBPFAs6DT+v9s45c5g2bG0Ct+9zDQTBFQdZb1cyZi2rJ7/7vajpMkyrAzhpylytmsaFNZZ/7dCzuldWif1/QHKQIqlBt1iycRLWKhvFAWKWW/7dcOuKtq1nVG8oo147fmACUfcwJO52le/mRvsJKaoal5genagWUuH8gps4ClcaV5hZSUySIYdgztUFJz+1kI2v2FKV2GA61hRyq/Kx7zFu22s5QM0sYRUqs74TVx7ZXZ8hZm0cGOW7p2x2pB6ZGSbzYPXsIHy4/NdRURAvjEynDW3vYBQ+mYkZSi6rUuM8ymkt0YPSyiwWu+9aVJLgA53EncClvAE0yCm8KVbJe3AiJwRjJvWCGAlC4iyBVhaJDv6KV+18qQbviYYY8PTwAB2FJLoEn2R86yR/MYGsLHPpzxnVrylXoFL7bfVDKDq9Esy/QsX0L3QOpdvYGVQcovvrY5dvUwzDqVDCHYEMHgNcQhYsSX2IWofae+n+Au3iGq4SxRTQxXL5zcRYCzUEcHq1bRyjakxNtVoyn/umvqZI8QfjjgdP7q42e7o147mNEpJ3d8JMwvrrL4KiMecDlZkG63l2mPh412dqTj6bsw9Qo7rwmcpi4NEIExnEMRXnWNcKIQlohgpgBa9WqACIyIEHuPXv1i2ZbVHHnBtQTra2V25PYiyEjEABHcgBmhbCQgggaaa+Z2BCJgEmEvoBcQgRCviz4BAGAt/7NDt9ZJdbgEAAAAAElFTkSuQmCC"/>
             </defs>
         </svg>
+
         <p id="mapDescription">{{store.Map[selectedArea]}}</p>
         <div class="flexRow">
             <div class="box">
