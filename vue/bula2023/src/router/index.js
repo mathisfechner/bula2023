@@ -1,25 +1,51 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import team from '../views/Team.vue'
+import faqs from '../views/FAQs.vue'
+import faq from '../views/FAQ.vue'
+import map from '../views/Map.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/:pathMatch*',
     name: 'Home',
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path:'/team',
+    name: 'team',
+    component: team
+  },
+  {
+    path:'/faq',
+    name: 'faqs',
+    component: faqs
+  },
+  {
+    path: '/faq/:tag',
+    name: 'faq',
+    component: faq,
+    props: true
+  },
+  {
+    path:'/lagerplatz',
+    name: 'lagerplatz',
+    component: map
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition;
+    if (to.hash != "") return {el: to.hash, top: 130, left: 0, behavior: to.path == from.path ? 'smooth' : 'auto'};
+    return {top: 0};
+  }
+})
+
+router.afterEach((to, from) => {
+  from.query.savedPosition = true;
 })
 
 export default router
