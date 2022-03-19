@@ -239,7 +239,7 @@ let Store = reactive({
         Sportplatz: "Der Ort für alle, die sich vor dem nächsten Programmpunkt noch mal richtig austoben müssen.",
         Küche: "Hier bekommt ihr alles, was euer Magen begehrt. Kochen müsst ihr aber selbst ;-)",
         Waschhaus: "Damit unser BuLa eine saubere Sache wird!",
-        Info: "Info: Erste Anlaufstelle für eure Fragen – und für alle, die etwas verloren haben, denn hier findet ihr auch die Fundkiste.",
+        Info: "Erste Anlaufstelle für eure Fragen – und für alle, die etwas verloren haben, denn hier findet ihr auch die Fundkiste.",
         Fahnenmast: "Hier versammelt sich das BuLa zur Morgen- und zur Abendwache.",
         Taverne: "Das Zentrum der BuLa-Mitarbeitenden: Hier finden morgens die Treffen der Kochgruppenleitungen statt und auch ansonsten wird hier fleißig am BuLa gearbeitet."
     },
