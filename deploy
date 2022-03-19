@@ -4,4 +4,4 @@ vapor build -c release \
 && cd ./vue/bula2023 \
 && npm install \
 && npm run build \
-&& supervisorctl restart bula2023-demo
+&& supervisorctl restart bula2023-prod
