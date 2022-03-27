@@ -19,7 +19,7 @@ export default {
   mixins: [mixin],
   computed: {
     expandButtonContent: function() {
-      return this.expanded ? '–' : '+';
+      return this.expanded ? 'weniger anzeigen' : 'mehr anzeigen';
     }
   },
   data() {
@@ -37,7 +37,7 @@ h3 {
     .text-shadow(fade(@clr-blue,30%));
 }
 .expandButton {
-  margin-top: -0.5rem;
+  font-size: 2rem;
 }
 .fade {
   mask-image: 
