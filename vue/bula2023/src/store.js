@@ -13,7 +13,7 @@ let Store = reactive({
         {name: "Theresa", position: "Lagerleitung", text:"Mag Zahlen. Hat daher ein Auge auf die Finanzen, wenn sich Rike und Melisa ständig teuren Schwachsinn für’s BuLa wünschen.", mail:"bula2023@bps-pfadfinder.de"},
         {name: "Justus", position: "Küche", text: "Kocht auch nur mit Wasser. Dafür geben noch Mia, Caro und Mathis aus Hannover ihren Senf dazu."},
         {name: "Jonathan", position: "Geistliches", text:"Leidenschaftlicher Theologe und Maultaschenliebhaber. Predigt gern mit einer Axt in der Hand."},
-        {name: "mena", position: "Sichere Pfadfinderarbeit", text:"Sorgt dafür, dass Kindesschutz beim BuLa groß geschrieben wird – nicht nur aus orthografischen Gründen."},
+        {name: "mena", position: "Sichere Pfadfinderarbeit", text:"Sorgt dafür, dass Kinderschutz beim BuLa groß geschrieben wird – nicht nur aus orthografischen Gründen."},
         {name: "Mara", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei von Christopher und dem größten Stamm der BPS unterstützt."},
         {name: "Christopher", position:"Großes Spiel", text: "Will doch nur spielen. Wird dabei von Mara und dem größten Stamm der BPS unterstützt."},
         {name: "Marten", position:"Design", text:"Unser Mann für’s Schöne. Außerdem für die Gestaltung der Website und das Corporate Design zuständig."},
@@ -182,7 +182,7 @@ let Store = reactive({
             },
             {
                 title: "Markttag",
-                description: "Ihr kennt das Konzept eines Markttages von diversen Lagern. Jeder Stamm bietet Essen, Workshops oder Spiele an, die Kids können rumlaufen und es sich gut gehen lassen. Wir brauchen eine Person, die diesen Tag organisiert und koordiniert. Wir würden im Vorhinein natürlich alles notwendige abklären und für Rückfragen zur Verfügung stehen.",
+                description: "Ihr kennt das Konzept eines Markttages von diversen Lagern. Jeder Stamm bietet Essen, Workshops oder Spiele an, die Kids können rumlaufen und es sich gut gehen lassen. Wir brauchen eine Person, die diesen Tag organisiert und koordiniert. Wir würden im Vorhinein natürlich alles Notwendige abklären und für Rückfragen zur Verfügung stehen.",
                 efford: "Vorbereitung im Vorfeld des Lagers, ansonsten während des Lagers. Nach dem Markttag habt ihr frei.",
                 contact: "Rike"
             },
