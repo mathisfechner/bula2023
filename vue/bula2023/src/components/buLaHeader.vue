@@ -1,83 +1,133 @@
 <template>
-    <header>
-        <svg @click="$router.push('/')" ref="logoTop" id="logoTop" class="logo" width="2.5rem" height="2.5rem" alt="BuLa Logo">
-            <use href="#bulaLogoContents"/>
-          </svg>
-        <div id="headerRow" :class="{'showOptions': showOptions}">
-          <button ref="burgerMenu" id="burgerMenu" :class="{'showOptions': showOptions}" @click.stop="toggleMenu">
-              <span aria-hidden="true">–</span>
-              <span aria-hidden="true">–</span>
-              <span aria-hidden="true">–</span>
-          </button>
-          <router-link to="/" tabindex="1"><h1 ref="BuLa">BuLa</h1></router-link>
-          <svg @click="$router.push('/')" :class="{'logo': true, 'showOptions': showOptions}" style="cursor:pointer" ref="logoRight" id="logoRight" width="2.5rem" height="2.5rem" alt="BuLa Logo">
-            <use href="#bulaLogoContents"/>
-          </svg>
-        </div>
-        <nav :class="{'displayMenu': displayMenu}" :aria-hidden="!displayMenu">
-          <router-link to="/team" :tabindex="displayMenu ? 0 : -1">Team | Jobs</router-link>
-          <router-link to="/faq" :tabindex="displayMenu ? 0 : -1">FAQ</router-link>
-          <router-link to="/lagerplatz" :tabindex="displayMenu ? 0 : -1">Lagerplatz</router-link>
-        </nav>
-    </header>
+  <header>
+    <svg
+      @click="$router.push('/')"
+      ref="logoTop"
+      id="logoTop"
+      class="logo"
+      width="2.5rem"
+      height="2.5rem"
+      alt="BuLa Logo"
+    >
+      <use href="#bulaLogoContents" />
+    </svg>
+    <div id="headerRow" :class="{ showOptions: showOptions }">
+      <button
+        ref="burgerMenu"
+        id="burgerMenu"
+        :class="{ showOptions: showOptions }"
+        @click.stop="toggleMenu"
+      >
+        <span aria-hidden="true">–</span>
+        <span aria-hidden="true">–</span>
+        <span aria-hidden="true">–</span>
+      </button>
+      <router-link to="/" tabindex="1"><h1 ref="BuLa">BuLa</h1></router-link>
+      <svg
+        @click="$router.push('/')"
+        :class="{ logo: true, showOptions: showOptions }"
+        style="cursor: pointer"
+        ref="logoRight"
+        id="logoRight"
+        width="2.5rem"
+        height="2.5rem"
+        alt="BuLa Logo"
+      >
+        <use href="#bulaLogoContents" />
+      </svg>
+    </div>
+    <nav :class="{ displayMenu: displayMenu }" :aria-hidden="!displayMenu">
+      <router-link to="/team" :tabindex="displayMenu ? 0 : -1"
+        >Team | Jobs</router-link
+      >
+      <router-link to="/faq" :tabindex="displayMenu ? 0 : -1">FAQ</router-link>
+      <router-link to="/lagerplatz" :tabindex="displayMenu ? 0 : -1"
+        >Lagerplatz</router-link
+      >
+      <router-link to="/brieffreundschaften" :tabindex="displayMenu ? 0 : -1"
+        >Brieffreundschaften</router-link
+      >
+    </nav>
+  </header>
 </template>
 
 <script>
-import mixin from '@/mixin.js'
+import mixin from "@/mixin.js";
 
 export default {
   mixins: [mixin],
   data() {
-    return{
+    return {
       initialised: false,
       showOptions: false,
       displayMenu: false,
-    }
+    };
   },
   methods: {
-    toggleMenu: function(e) {
+    toggleMenu: function (e) {
       this.displayMenu = !this.displayMenu;
       if (this.displayMenu) {
-        if (e.pointerType=="touch") {
-          window.addEventListener("touchstart", () => {
-            this.displayMenu = false;
-          }, {once: true})
+        if (e.pointerType == "touch") {
+          window.addEventListener(
+            "touchstart",
+            () => {
+              this.displayMenu = false;
+            },
+            { once: true }
+          );
         } else {
-          window.addEventListener("click", () => {
-            this.displayMenu = false;
-          }, {once: true})
+          window.addEventListener(
+            "click",
+            () => {
+              this.displayMenu = false;
+            },
+            { once: true }
+          );
         }
       }
     },
-    updateHeader: function() {
+    updateHeader: function () {
       const scrollY = window.pageYOffset;
-      const rem = parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue('font-size'));
+      const rem = parseFloat(
+        window
+          .getComputedStyle(document.documentElement)
+          .getPropertyValue("font-size")
+      );
       //if (scrollY > 6 * rem && this.initialised) return;
       //logoTop
-      this.$refs.logoTop.style.width = Math.max(8 - 3 * scrollY / (3 * rem), 0) + "rem";
-      this.$refs.logoTop.style.height = Math.max(8 - 3 * scrollY / (3 * rem), 0) + "rem";
+      this.$refs.logoTop.style.width =
+        Math.max(8 - (3 * scrollY) / (3 * rem), 0) + "rem";
+      this.$refs.logoTop.style.height =
+        Math.max(8 - (3 * scrollY) / (3 * rem), 0) + "rem";
       //if (scrollY > 2 * rem && this.initialised) return;
       //logoRight, Bula,
-      this.$refs.BuLa.style.fontSize = Math.max(5.5 - 0.5 * scrollY / (2 * rem), 5) + "rem";
+      this.$refs.BuLa.style.fontSize =
+        Math.max(5.5 - (0.5 * scrollY) / (2 * rem), 5) + "rem";
 
-      this.$refs.logoRight.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
-      this.$refs.logoRight.style.height = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
+      this.$refs.logoRight.style.width =
+        Math.max(8 - (3 * scrollY) / (2 * rem), 5) + "rem";
+      this.$refs.logoRight.style.height =
+        Math.max(8 - (3 * scrollY) / (2 * rem), 5) + "rem";
 
-      this.$refs.burgerMenu.style.fontSize = Math.max(5 - 1 * scrollY / (2 * rem), 4) + "rem";
-      this.$refs.burgerMenu.style.width = Math.max(8 - 3 * scrollY / (2 * rem), 5) + "rem";
-      this.$refs.burgerMenu.style.height = Math.max(2.5 - 3/4 * scrollY / (2 * rem), 2.5-3/4) + "rem";
-      this.$refs.burgerMenu.style.marginTop = Math.min(-1.5 + 0.75 * scrollY / (2 * rem), -0.75) + "rem";
+      this.$refs.burgerMenu.style.fontSize =
+        Math.max(5 - (1 * scrollY) / (2 * rem), 4) + "rem";
+      this.$refs.burgerMenu.style.width =
+        Math.max(8 - (3 * scrollY) / (2 * rem), 5) + "rem";
+      this.$refs.burgerMenu.style.height =
+        Math.max(2.5 - ((3 / 4) * scrollY) / (2 * rem), 2.5 - 3 / 4) + "rem";
+      this.$refs.burgerMenu.style.marginTop =
+        Math.min(-1.5 + (0.75 * scrollY) / (2 * rem), -0.75) + "rem";
       this.initialised = true;
 
       if (scrollY > 8.5 * rem) this.showOptions = true;
       else this.showOptions = false;
-    }
+    },
   },
   mounted() {
     this.updateHeader();
-    window.addEventListener("scroll", this.updateHeader)
-  }
-}
+    window.addEventListener("scroll", this.updateHeader);
+  },
+};
 </script>
 
 <style lang="less">
@@ -85,7 +135,7 @@ export default {
 
 main {
   padding-top: 10rem !important;
-  @media (max-width: 25*16px) {
+  @media (max-width: (25 * 16px)) {
     padding-top: 16rem !important;
   }
 }
@@ -107,7 +157,7 @@ header {
     margin-top: 1rem;
     width: 15rem;
     backdrop-filter: blur(5px);
-    background-color: #FFFFFF55;
+    background-color: #ffffff55;
     border-radius: 1rem;
     transform: translate(-200%, 0);
     .transition();
@@ -161,23 +211,28 @@ header {
     height: 8rem;
     width: 8rem;
   }
-  #logoTop {display: none; pointer-events: all}; 
+  #logoTop {
+    display: none;
+    pointer-events: all;
+  }
 
-  @media (min-width: 28*16px) {
+  @media (min-width: (28*16px)) {
     #headerRow {
       padding: 0.5rem 1rem;
     }
   }
 
-  @media (max-width: 25*16px) {
+  @media (max-width: (25*16px)) {
     width: calc(100% - 2rem);
     margin: 1rem 1rem;
-    #logoTop {display: block;};
+    #logoTop {
+      display: block;
+    }
     #logoRight {
       width: 2rem !important;
       height: 5rem !important;
       transform: translate(200%, 0);
-      .transition();      
+      .transition();
     }
     #burgerMenu {
       width: 2rem !important;
@@ -185,11 +240,17 @@ header {
       .transition();
     }
     .showOptions {
-      &#burgerMenu, &#logoRight {transform: translate(0,0) !important; width: 5rem !important}
+      &#burgerMenu,
+      &#logoRight {
+        transform: translate(0, 0) !important;
+        width: 5rem !important;
+      }
     }
   }
-  @media (max-height: 20*16px) {
-    h1 {font-size: 3rem !important;}
+  @media (max-height: (20*16px)) {
+    h1 {
+      font-size: 3rem !important;
+    }
     #logoRight {
       width: 3rem !important;
       height: 3rem !important;
@@ -198,13 +259,13 @@ header {
       width: 3rem !important;
       font-size: 4rem !important;
       height: 2.25rem !important;
-      margin-top: -.75rem !important;
+      margin-top: -0.75rem !important;
     }
   }
   #headerRow.showOptions {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    background-color: #FFFFFF55;
+    background-color: #ffffff55;
   }
 }
 </style>
