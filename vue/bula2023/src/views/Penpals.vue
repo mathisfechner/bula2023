@@ -1,6 +1,21 @@
 <template>
   <main>
     <h2>Brieffreundschaften</h2>
+    <p>
+      Wir wollen euch die Monate vor dem BULA, eine Sippen-Brieffreundschaft
+      ermöglichen. Von März an bis zum BuLa können ihr und eure Partnersippe
+      einander Briefe schreiben und euch so gegenseitig durch die Wartezeit bis
+      zum großen HALLO auf dem BuLa begleiten.
+    </p>
+    <p>
+      Meldet eure Sippe also flugs an und freut euch auf ein Starterpaket,
+      monatliche Themenvorschläge für das gemeinsame Briefe Schreiben in der
+      Sippenstunde und natürlich eine herzliche Fernfreundschaft zu einer
+      wunderbaren anderen Sippe in unserem Bund.
+    </p>
+    <h3 id="anmeldung" @click="$router.push('/brieffreundschaften#anmeldung')">
+      Anmeldung
+    </h3>
     <form @submit.prevent="onSubmit" v-show="!submitted">
       <h4>Infos zur Sippe</h4>
       <div>

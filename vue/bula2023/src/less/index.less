@@ -1,101 +1,118 @@
 //Hier wird der ganze Style initialisiert
 
 :root {
-    --font-color: black;//#3A3938;
+  --font-color: black; //#3A3938;
 }
 
 html {
-    background-image: url(/background1.jpg);
-    background-color: #E2D6CC;
-    padding: 0;
-    font-size: 16px;
+  background-image: url(/background1.jpg);
+  background-color: #e2d6cc;
+  padding: 0;
+  font-size: 16px;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-main, footer {
-    max-width: 35rem;
-    margin: 0 auto;
-    padding: 2rem;
+main,
+footer {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 * {
-    font-family: 'Corporate S', Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+  font-family: "Corporate S", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
 }
-h1, h2, h3, h4, h5 {
-    text-align: center;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  margin: 0;
+  color: #333333;
 }
 h1 {
-    color: var(--font-color);
-    font-size: 5.5rem;
+  color: var(--font-color);
+  font-size: 5.5rem;
 }
 h2 {
-    color: var(--font-color);
-    font-size: 5rem;
-    margin: 2rem 0 1rem 0;
-    @media (min-width: 33.5 * 16px) {
-        &::before {content: "– ";}
-        &::after {content: " –"};
+  color: var(--font-color);
+  font-size: 5rem;
+  margin: 2rem 0 1rem 0;
+  @media (min-width: 33.5 * 16px) {
+    &::before {
+      content: "– ";
     }
+    &::after {
+      content: " –";
+    }
+  }
 }
 h3 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 h4 {
-    font-size: 1.25rem;
-    font-family: 'Kelpt A1';
-    font-weight: bold;
-    font-style: normal;
+  font-size: 1.25rem;
+  font-family: "Kelpt A1";
+  font-weight: bold;
+  font-style: normal;
 }
 h5 {
-    font-size: 1.15rem;
-    font-family: 'Corporate S', Avenir, Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-style: normal;
+  font-size: 1.15rem;
+  font-family: "Corporate S", Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 button {
-    background: none;
-    border: none;
-    text-align: center;
-    font-size: inherit;
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: inherit;
 }
 
 .expandButton {
-    .sketchyFont();
-    font-size: 4rem;
+  .sketchyFont();
+  font-size: 4rem;
+  color: #333333;
+}
+.expandButton:hover {
+  color: lighten(#333333, 10%);
+}
+.expandButton&.text {
+  font-size: 2rem;
 }
 
 a {
-    color: #2c3e50;
-    text-decoration: none;
-    cursor: pointer;
-    &.router-link-exact-active {
-        color: #42b983;
-    }
+  color: #2c3e50;
+  text-decoration: none;
+  cursor: pointer;
+  &.router-link-exact-active {
+    color: #42b983;
+  }
 }
 p {
-    a {
-        text-decoration: underline;
-    }
+  a {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 28*16px) {
-    html {
-        font-size: 13px;
-    }
+  html {
+    font-size: 13px;
+  }
 }
 
 .flexRow {
-    display: flex;
-    @media (max-width: 30*16px) {
-        flex-direction: column;
-    }
+  display: flex;
+  @media (max-width: 30*16px) {
+    flex-direction: column;
+  }
 }
