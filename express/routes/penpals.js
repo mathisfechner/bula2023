@@ -20,6 +20,7 @@ router.get("/penpals/dont/tell/mirko", async function (req, res, next) {
   var values = await req.penpalsDB.values().all();
   var fields = [
     { label: "Sippenname", value: "input-sippe" },
+    { label: "Stamm", value: "input-stamm" },
     { label: "Verantwortliche Person", value: "input-kontakt" },
     { label: "Telefonnummer", value: "input-tel" },
     { label: "E-Mail Adresse", value: "input-mail" },
