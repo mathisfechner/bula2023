@@ -27,3 +27,8 @@ vue/bula2023/pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+#express
+express/bulaDB
+express/public
+express/node_modules

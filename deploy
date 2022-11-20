@@ -1,7 +1,9 @@
 #!/bin/bash
-
-vapor build -c release \
+git pull
 && cd ./vue/bula2023 \
 && npm install \
 && npm run build \
-&& supervisorctl restart bula2023-demo
+&& cd ../express \
+&& npm install \
+&& npm start \
+&& supervisorctl restart bula2023-prod

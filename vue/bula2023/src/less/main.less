@@ -9,31 +9,30 @@
 @spacing-small-small: 1/4rem;
 
 .text-shadow(@color) {
-    text-shadow: 2px 0 0 @color,
-        -2px 0 0 @color, 
-        0 2px 0 @color, 
-        0 -2px 0 @color, 
-        1px 1px @color,
-        -1px -1px 0 @color,
-        1px -1px 0 @color,
-        -1px 1px 0 @color;
+  text-shadow: 2px 0 0 @color, -2px 0 0 @color, 0 2px 0 @color, 0 -2px 0 @color,
+    1px 1px @color, -1px -1px 0 @color, 1px -1px 0 @color, -1px 1px 0 @color;
 }
 
-@clr-yellow: #F5E3AE;
-@clr-blue: #4A728A;
-@clr-red: #B97165;
-
-.sketchyFont, h1, h2, h3 {
-    font-family: 'Sketch Gothic School' !important;
-    font-weight: normal !important;
-}
+@clr-yellow: #f5e3ae;
+@clr-blue: #4a728a;
+@clr-red: #b97165;
 
 .transition {
-    transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.sketchyFont {
+  font-family: "Sketch Gothic School" !important;
+  font-weight: normal !important;
 }
 
 //shadow for hover
 @border-offset: 0.1rem;
 @border-radius: 0.2rem;
-@border-color: #FFFFFF;
-@drop-shadow: drop-shadow(@border-offset @border-offset @border-radius @border-color) drop-shadow(-@border-offset @border-offset @border-radius @border-color) drop-shadow(@border-offset -@border-offset @border-radius @border-color) drop-shadow(-@border-offset -@border-offset @border-radius @border-color);
+@border-color: #ffffff;
+@drop-shadow: drop-shadow(
+    @border-offset @border-offset @border-radius @border-color
+  )
+  drop-shadow(-@border-offset @border-offset @border-radius @border-color)
+  drop-shadow(@border-offset -@border-offset @border-radius @border-color)
+  drop-shadow(-@border-offset -@border-offset @border-radius @border-color);
