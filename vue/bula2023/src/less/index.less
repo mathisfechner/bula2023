@@ -1,4 +1,5 @@
 //Hier wird der ganze Style initialisiert
+@import "./main.less";
 
 :root {
   --font-color: black; //#3A3938;
@@ -78,6 +79,12 @@ button {
   font-size: inherit;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Sketch Gothic School" !important;
+  font-weight: normal !important;
+}
 .expandButton {
   .sketchyFont();
   font-size: 4rem;
@@ -115,4 +122,59 @@ p {
   @media (max-width: 30*16px) {
     flex-direction: column;
   }
+}
+
+input {
+  &,
+  & + label {
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+  }
+  background-color: #ffffff99;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: fit-content;
+  border: transparent solid 2px;
+  &::placeholder {
+    color: transparent;
+  }
+  position: relative;
+}
+input:invalid:not(:placeholder-shown) {
+  border: @clr-red solid 2px !important;
+}
+input {
+  &,
+  & + label {
+    transition: all 0.25s ease-in-out;
+    transform-origin: 0 0;
+    & + label {
+      opacity: 0.75;
+    }
+  }
+}
+input {
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: rgba(white, 0.1);
+    & + label {
+      transform: translate(0%, -30%) scale(0.9);
+      opacity: 1;
+    }
+    margin-top: 1rem;
+  }
+}
+select {
+  & + label {
+    transform: translate(0%, -100%) scale(0.9);
+    opacity: 1;
+  }
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
 }

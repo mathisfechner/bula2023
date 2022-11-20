@@ -96,8 +96,53 @@ let Store = reactive({
           },
           {
             question: "Wie läuft die Anmeldung?",
+            answer: [
+              "Die Anmeldung erfolgt online. Wenn du einem Stamm oder einer Siedlung angehörst oder einer Gast-Gruppe, die teilnimmt, dann erfolgt die Anmeldung über die Gruppe. Den Link für deine Anmeldung erhältst du von deiner Stammesführung oder Gruppenleitung.",
+              "Wenn du Rover oder Altpfadfinder bist und derzeit keinem Stamm angehörst, wende dich an <a href='mailto:bula2023@bps-pfadfinder.de'>bula2023@bps-pfadfinder.de</a> und wir schicken dir den Link zur Anmeldung zu. Falls du dich gerne einer bestimmten Kochgruppe anschließen möchtest, gib das am besten in den Kommentaren an.",
+            ],
+          },
+          {
+            question: "Bis wann muss man sich anmelden?",
             answer:
-              "Die Anmeldung wird im Laufe der zweiten Jahreshälfte 2022 herauskommen. Dann werdet ihr hier auch genauere Infos zum Anmeldeprozess finden.",
+              "Der Anmeldeschluss für die reguläre Anmeldung ist der 19.02.2023. Nachzügler haben noch bis zum 15.06.2023 Zeit, sich anzumelden, müssen aber mit dem erhöhten Spätbucherpreis leben.",
+          },
+          {
+            question: "Wieviel kostet die Teilnahme",
+            answer: [
+              "Der Teilnehmerbeitrag ist diesmal solidarisch gestaltet: Alle können entscheiden, ob sie 160 €, 180 € oder 200 € zahlen wollen (Beiträge ohne Familienrabatt). So können wir auch Kindern aus einkommensschwachen Familien die Teilnahme ermöglichen.",
+              "Falls du gerne teilnehmen möchtest, dir den regulären Beitrag aber absolut nicht leisten kannst, dann <a href='mailto:bula2023@bps-pfadfinder.de'>gib uns bitte Bescheid</a> – wir finden eine Lösung!",
+              "Für Kinder unter vier Jahren fällt kein Teilnehmer-Beitrag an.",
+              "<b>Die regulären TN-Beiträge sind:</b>",
+              `<table>
+            <tr>
+            <td>Vollzahler</td><td>160 €, 180 € oder 200 €</td>
+            </tr>
+            <tr>
+            <td>Rabatt fürs 2. Kind</td><td>- 40 €</td>
+            </tr>
+            <tr>
+            <td>Rabatt fürs 3. und jedes weitere Kind</td><td>- 80 €</td>
+            </tr>
+            <tr>
+            <td>Kinder (4 bis 7 Jahre)</td><td>50 €</td>
+            </tr>
+            <tr>
+            <td>Spätbucher</td><td>180 €, 200 € oder 220 €</td>
+            </tr>
+            <tr>
+            <td>Tagesgäste</td><td>20 € p.Tag</td>
+            </tr>
+            <tr>
+            <td>Vorlager (ab 17 Jahre)</td><td>45 € (zuzüglich zum BuLa-Beitrag)</td>
+            </tr>
+            </table>
+            `,
+            ],
+          },
+          {
+            question: "Wird es ein Vorlager geben?",
+            answer:
+              "Ja, vom 26. bis 29.07.2023 findet das Vorlager statt, zu dem alle Rover und Altpfadfinder, die Lust haben, den Lagerplatz auf den Ansturm hunderter Pfadis vorzubereiten, Schilder zu malen, zu bauen, zu werkeln und abzustecken, herzlich eingeladen sind.",
           },
           {
             question:
@@ -125,7 +170,7 @@ let Store = reactive({
           {
             question: "Gibt es die Möglichkeit, in einem Haus zu nächtigen?",
             answer:
-              "Ja, die gibt es. Allerdings sind die Plätze begrenzt und daher denen vorbehalten, die mit sehr kleinen Kindern anreisen oder aus gesundheitlichen Gründen z.B. ein Bett oder eine Steckdose benötigen. Bitte beachtet, dass die Lagerbeiträge bei Übernachtung im Haus ein bisschen teurer sind als bei einer Übernachtung im Zelt.",
+              "Ja, die gibt es. Allerdings sind die Plätze begrenzt und daher denen vorbehalten, die mit sehr kleinen Kindern anreisen oder aus gesundheitlichen Gründen z.B. ein Bett oder eine Steckdose benötigen. Bitte beachtet, dass die Lagerbeiträge bei Übernachtung im Haus ein bisschen teurer sind als bei einer Übernachtung im Zelt. Falls du eine Übernachtungsmöglichkeit im Haus benötigst, wende dich bitte an die <a href='mailto:bula2023@bps-pfadfinder.de'>Lagerleitung</a>.",
           },
           {
             question:
@@ -148,7 +193,45 @@ let Store = reactive({
           {
             question: "Wie läuft die Anmeldung?",
             answer:
-              "Die Anmeldung wird im Laufe der zweiten Jahreshälfte 2022 herauskommen. Dann werdet ihr hier auch genauere Infos zum Anmeldeprozess finden.",
+              "Die Anmeldung erfolgt online über den Stamm oder die Siedlung. Den Link für die Anmeldung erhältst du von Stammesführung oder Gruppenleitung deines Kindes.",
+          },
+          {
+            question: "Bis wann muss man sich anmelden?",
+            answer:
+              "Der Anmeldeschluss für die reguläre Anmeldung ist der 19.02.2023. Nachzügler haben noch bis zum 15.06.2023 Zeit, sich anzumelden, müssen aber mit dem erhöhten Spätbucherpreis leben.",
+          },
+          {
+            question: "Wieviel kostet die Teilnahme?",
+            answer: [
+              "Der Teilnehmerbeitrag ist diesmal solidarisch gestaltet: Alle können entscheiden, ob sie 160 €, 180 € oder 200 € zahlen wollen (Beiträge ohne Familienrabatt). So können wir auch Kindern aus einkommensschwachen Familien die Teilnahme ermöglichen.",
+              "Falls jemand teilnehmen möchte, sich den regulären Beitrag aber absolut nicht leisten kann, dann finden wir eine Lösung! Meldet euch in einem solchen Fall bitte bei der <a href='mailto:bula2023@bps-pfadfinder.de'>Lagerleitung</a>.",
+              "Für Kinder unter vier Jahren fällt kein Teilnehmer-Beitrag an.",
+              "<b>Die regulären TN-Beiträge sind:</b>",
+              `<table>
+            <tr>
+            <td>Vollzahler</td><td>160 €, 180 € oder 200 €</td>
+            </tr>
+            <tr>
+            <td>Rabatt fürs 2. Kind</td><td>- 40 €</td>
+            </tr>
+            <tr>
+            <td>Rabatt fürs 3. und jedes weitere Kind</td><td>- 80 €</td>
+            </tr>
+            <tr>
+            <td>Kinder (4 bis 7 Jahre)</td><td>50 €</td>
+            </tr>
+            <tr>
+            <td>Spätbucher</td><td>180 €, 200 € oder 220 €</td>
+            </tr>
+            <tr>
+            <td>Tagesgäste</td><td>20 € p.Tag</td>
+            </tr>
+            <tr>
+            <td>Vorlager (ab 17 Jahre)</td><td>45 € (zuzüglich zum BuLa-Beitrag)</td>
+            </tr>
+            </table>
+            `,
+            ],
           },
           {
             question: "Habt ihr ein Kinderschutzkonzept?",
@@ -170,14 +253,63 @@ let Store = reactive({
           },
           {
             question: "Wie läuft die Anmeldung?",
+            answer: [
+              "Die Anmeldung erfolgt online und für alle, die einem Stamm, einer Siedlung oder einer Gast-Gruppe angehören, über einen Gruppenlink. Dafür muss sich zunächst die Gruppenleitung, also z.B. die Stammesführung anmelden und bekommt dann einen Link für die Gruppenanmeldung zugeschickt, der an die potenziellen Teilnehmenden im Stamm oder der Siedlung weitergegeben werden muss. Wir haben dafür einen Brief an die Teilnehmenden mit allen wichtigen Infos erstellt, in den ihr nur noch euren Gruppenlink hineinkopieren müsst. Dann können sich die Teilnehmenden über den Link anmelden.",
+              "Die Gruppenleitung erhält in regelmäßigen Abständen eine Übersicht darüber, wer sich in der eigenen Gruppe bereits angemeldet hat. Gruppenleitungen erhalten den Link für ihre eigene Anmeldung über den Stafü-Verteiler oder können sich <a href='mailto:bula2023@bps-pfadfinder.de'>an die Lagerleitung wenden</a>",
+            ],
+          },
+          {
+            question: "Bis wann muss man sich anmelden?",
             answer:
-              "Die Anmeldung wird im Laufe der zweiten Jahreshälfte 2022 herauskommen. Dann werdet ihr hier auch genauere Infos zum Anmeldeprozess finden.",
+              "Der Anmeldeschluss für die reguläre Anmeldung ist der 19.02.2023. Nachzügler haben noch bis zum 15.06.2023 Zeit, sich anzumelden, müssen aber mit dem erhöhten Spätbucherpreis leben.",
+          },
+          {
+            question: "Wieviel kostet die Teilnahme?",
+            answer: [
+              "Der Teilnehmerbeitrag ist diesmal solidarisch gestaltet: Alle können entscheiden, ob sie 160 €, 180 € oder 200 € zahlen wollen (Beiträge ohne Familienrabatt). So können wir auch Kindern aus einkommensschwachen Familien die Teilnahme ermöglichen.",
+              "Falls jemand teilnehmen möchte, sich den regulären Beitrag aber absolut nicht leisten kann, dann finden wir eine Lösung! Meldet euch in einem solchen Fall bitte bei der <a href='mailto:bula2023@bps-pfadfinder.de'>Lagerleitung</a>.",
+              "Für Kinder unter vier Jahren fällt kein Teilnehmer-Beitrag an.",
+              "<b>Die regulären TN-Beiträge sind:</b>",
+              `<table>
+            <tr>
+            <td>Vollzahler</td><td>160 €, 180 € oder 200 €</td>
+            </tr>
+            <tr>
+            <td>Rabatt fürs 2. Kind</td><td>- 40 €</td>
+            </tr>
+            <tr>
+            <td>Rabatt fürs 3. und jedes weitere Kind</td><td>- 80 €</td>
+            </tr>
+            <tr>
+            <td>Kinder (4 bis 7 Jahre)</td><td>50 €</td>
+            </tr>
+            <tr>
+            <td>Spätbucher</td><td>180 €, 200 € oder 220 €</td>
+            </tr>
+            <tr>
+            <td>Tagesgäste</td><td>20 € p.Tag</td>
+            </tr>
+            <tr>
+            <td>Vorlager (ab 17 Jahre)</td><td>45 € (zuzüglich zum BuLa-Beitrag)</td>
+            </tr>
+            </table>
+            `,
+            ],
+          },
+          {
+            question: "Müssen Mitarbeitende auch den Teilnehmerbeitrag zahlen?",
+            answer: "Ja, auf unseren Lagern zahlen alle den Teilnehmerbeitrag.",
           },
           {
             question:
               "Ist die Anreise mit öffentlichen Verkehrsmitteln möglich?",
             answer:
               "Ja, die ist möglich. Zwar gibt es in Reinwarzhofen selbst keinen Bahnhof, wir werden aber einen Shuttleservice zum nächstgelegenen Bahnhof einrichten. Bitte sagt vorher Bescheid, wenn ihr diesen Service in Anspruch nehmen möchtet.",
+          },
+          {
+            question: "Wird es wieder Kostüme geben?",
+            answer:
+              "Na klar! Nähere Infos dazu erhaltet ihr im Februar nächsten Jahres.",
           },
         ],
       },
@@ -244,6 +376,15 @@ let Store = reactive({
               { link: "/team#jobs", linkText: "Jobbörse" },
               { text: " vorbei." },
             ],
+          },
+          {
+            question: "Wird es ein Vorlager geben?",
+            answer:
+              "Ja, vom 26. bis 29.07.2023 findet das Vorlager statt, zu dem alle Rover und Altpfadfinder, die Lust haben, den Lagerplatz auf den Ansturm hunderter Pfadis vorzubereiten, Schilder zu malen, zu bauen, zu werkeln und abzustecken, herzlich eingeladen sind.",
+          },
+          {
+            question: "Müssen Mitarbeitende auch den Teilnehmerbeitrag zahlen?",
+            answer: "Ja, auf unseren Lagern zahlen alle den Teilnehmerbeitrag.",
           },
         ],
       },
@@ -387,14 +528,14 @@ let Store = reactive({
           "Vorbereitung im Vorfeld des Lagers, ansonsten vor allem während des Lagers.",
         contact: "Melisa",
       },
-      {
-        title: "Organisation der Nachtwachen",
-        description:
-          "Damit nachts alle gut und sicher schlafen können, wird es auf dem BuLa natürlich wieder eine Nachtwache geben. Doch wer ist wann dran und was genau soll die Nachtwache eigentlich tun? Wenn du all dies koordinieren möchtest, haben wir den passenden Job für dich!",
-        efford:
-          "Etwas Vorbereitung vor dem Lager. Einteilung und Einweisung der Nachtwachen auf dem Lager.",
-        contact: "Rike",
-      },
+      // {
+      //   title: "Organisation der Nachtwachen",
+      //   description:
+      //     "Damit nachts alle gut und sicher schlafen können, wird es auf dem BuLa natürlich wieder eine Nachtwache geben. Doch wer ist wann dran und was genau soll die Nachtwache eigentlich tun? Wenn du all dies koordinieren möchtest, haben wir den passenden Job für dich!",
+      //   efford:
+      //     "Etwas Vorbereitung vor dem Lager. Einteilung und Einweisung der Nachtwachen auf dem Lager.",
+      //   contact: "Rike",
+      // },
     ],
   },
   Map: {
