@@ -5,9 +5,7 @@ const mixin = {
     return {
       store: Store,
       baseServerURL:
-        process.env.NODE_ENV === "production"
-          ? "https://bula2023.de"
-          : "http://localhost:3300",
+        process.env.NODE_ENV === "production" ? "" : "http://localhost:3300",
     };
   },
   methods: {

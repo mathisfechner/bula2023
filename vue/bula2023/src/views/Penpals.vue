@@ -106,13 +106,35 @@
         Abschicken
       </button>
     </form>
-    <div v-show="submitted">
+    <div v-show="submitted && !error">
       <h4 ref="success">Erfolgreich abgeschickt!</h4>
       <p>
         Haltet schonmal Karte und Stift bereit. Ihr werdet demnächst über die
         angegebenen Daten kontaktiert. Viel Spaß beim Schreiben!
       </p>
       <button @click="submitted = false">Weitere Sippe anmelden</button>
+    </div>
+    <div v-show="submitted && error">
+      <h4>Es gab leider einen Fehler.</h4>
+      <p>
+        Du kannst uns die Daten gerne Per Mail schicken. Klicke dafür einfach
+        auf folgenden button, wir füllen dann alles für dich aus:
+        <a
+          :href="
+            'mailto:web@bula2023.de?subject=Fehler Brieffreundschaften&body=Moin, im Folgenden die Daten der Anfrage: ' +
+            JSON.stringify(requestBody)
+          "
+          >Anmeldung per Mail versenden.</a
+        >
+      </p>
+      <button
+        @click="
+          submitted = false;
+          error = false;
+        "
+      >
+        Erneut versuchen / Weitere Sippe anmelden
+      </button>
     </div>
   </main>
 </template>
@@ -129,6 +151,8 @@ export default {
     return {
       loading: false,
       submitted: false,
+      error: false,
+      requestBody: {},
     };
   },
   methods: {
@@ -143,7 +167,7 @@ export default {
           requestBody[key] = form.target.elements[key].value;
         });
 
-      console.log(requestBody);
+      this.requestBody = requestBody;
 
       const requestOptions = {
         method: "POST",
@@ -163,6 +187,12 @@ export default {
               block: "center",
             });
           }, 10);
+        })
+        .catch((error) => {
+          this.error = true;
+          this.submitted = true;
+          console.log(error);
+          this.requestBody.error = error;
         });
     },
   },
