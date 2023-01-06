@@ -2,7 +2,7 @@
   <main>
     <h2>Brieffreundschaften</h2>
     <p>
-      Wir wollen euch die Monate vor dem BuLa, eine Sippen-Brieffreundschaft
+      Wir wollen euch die Monate vor dem BuLa eine Sippen-Brieffreundschaft
       ermöglichen. Von März an bis zum BuLa können ihr und eure Partnersippe
       einander Briefe schreiben und euch so gegenseitig durch die Wartezeit bis
       zum großen HALLO auf dem BuLa begleiten.
