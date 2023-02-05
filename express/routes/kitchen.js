@@ -10,7 +10,7 @@ router.post("/meal", function (req, res, next) {
     id: id,
     title: req.body["input-title"],
     description: req.body["input-description"],
-    contact: req.body["input-contact"]?.toLowerCase(),
+    contact: req.body["input-mail"].toLowerCase(),
     plus: [],
     minus: [],
   };
