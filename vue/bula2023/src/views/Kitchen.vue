@@ -3,7 +3,7 @@
     <h2>Essensumfrage</h2>
     <p>
       Wir als BuLa Küchenteam wollen euch mit hineinnehmen in eine der
-      wichtigsten Lagerentscheidungen: <b>Was soll es zu Essen geben?</b>
+      wichtigsten Lagerentscheidungen: <b>Was soll es zu essen geben?</b>
     </p>
     <p>
       Wenn ihr uns unterstützen wollt, tragt schnell eure Mailadresse in das
