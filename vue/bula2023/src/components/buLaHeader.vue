@@ -44,8 +44,11 @@
       <router-link to="/lagerplatz" :tabindex="displayMenu ? 0 : -1"
         >Lagerplatz</router-link
       >
-      <router-link to="/brieffreundschaften" :tabindex="displayMenu ? 0 : -1"
+      <!-- <router-link to="/brieffreundschaften" :tabindex="displayMenu ? 0 : -1"
         >Brieffreundschaften</router-link
+      > -->
+      <router-link to="/gerichte" :tabindex="displayMenu ? 0 : -1"
+        >Essensumfrage</router-link
       >
     </nav>
   </header>

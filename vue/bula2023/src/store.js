@@ -29,7 +29,7 @@ let Store = reactive({
     {
       name: "Justus",
       position: "Küche",
-      text: "Kocht auch nur mit Wasser. Dafür geben noch Mia, Caro und Mathis aus Hannover ihren Senf dazu.",
+      text: "Kocht auch nur mit Wasser. Dafür geben noch Mia, Luca und Mathis aus Hannover ihren Senf dazu.",
     },
     {
       name: "Jonathan",
@@ -54,7 +54,7 @@ let Store = reactive({
     {
       name: "Marten",
       position: "Design",
-      text: "Unser Mann für’s Schöne. Außerdem für die Gestaltung der Website und das Corporate Design zuständig.",
+      text: "Unser Mann fürs Schöne. Außerdem für die Gestaltung der Website und das Corporate Design zuständig.",
     },
     {
       name: "Mathis",

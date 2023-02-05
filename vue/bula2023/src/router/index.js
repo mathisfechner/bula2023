@@ -4,7 +4,9 @@ import team from "../views/Team.vue";
 import faqs from "../views/FAQs.vue";
 import faq from "../views/FAQ.vue";
 import map from "../views/Map.vue";
-import Penpals from "../views/Penpals.vue";
+//import Penpals from "../views/Penpals.vue";
+import Kitchen from "../views/Kitchen.vue";
+
 const routes = [
   {
     path: "/:pathMatch*",
@@ -32,10 +34,14 @@ const routes = [
     name: "lagerplatz",
     component: map,
   },
+  // {
+  //   path: "/brieffreundschaften",
+  //   name: "brieffreundschaften",
+  //   component: Penpals,
+  // },
   {
-    path: "/brieffreundschaften",
-    name: "brieffreundschaften",
-    component: Penpals,
+    path: "/gerichte",
+    component: Kitchen,
   },
 ];
 
