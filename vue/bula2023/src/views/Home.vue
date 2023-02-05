@@ -6,7 +6,7 @@
     <team :team="store.Team"></team>
     <h2 @click="$router.push('/faq')" class="linkingHeadline">FAQ</h2>
     <faq></faq>
-    <h2
+    <!-- <h2
       @click="$router.push('/brieffreundschaften')"
       clss="linkingHeadline"
       style="font-size: 3.5rem"
@@ -31,6 +31,23 @@
         @click="$router.push('/brieffreundschaften#anmeldung')"
       >
         zur Anmeldung
+      </button>
+    </div> -->
+    <h2 @click="$router.push('/gerichte')" class="linkingHeadline">
+      Essensumfrage
+    </h2>
+    <p>
+      Wir als BuLa Küchenteam wollen euch mit hineinnehmen in eine der
+      wichtigsten Lagerentscheidungen: <b>Was soll es zu Essen geben?</b>
+    </p>
+    <p>
+      Dafür könnt ihr über Vorschläge von Anderen abstimmen oder selbst welche
+      einreichen. Wir geben uns dann größte Mühe, eure Favoriten mit in den
+      Speiseplan aufzunehmen.
+    </p>
+    <div style="display: flex; justify-content: center">
+      <button class="expandButton text" @click="$router.push('/gerichte')">
+        zur Umfrage
       </button>
     </div>
     <h2 @click="$router.push('/team#jobs')" class="linkingHeadline">Jobs</h2>
