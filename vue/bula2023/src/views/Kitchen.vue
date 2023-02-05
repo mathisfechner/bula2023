@@ -149,11 +149,17 @@ export default {
 
       fetch(this.baseServerURL + "/meal", requestOptions)
         .then((response) => response.json())
-        .then((data) => {
+        .then(() => {
           this.submitted = true;
           this.loading = false;
           form.target.reset();
-          setTimeout(() => {}, 10);
+          setTimeout(() => {
+            this.$refs.success.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+          }, 10);
+          this.fetchMeals();
         })
         .catch((error) => {
           this.error = true;
@@ -195,7 +201,6 @@ export default {
       )
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
           this.meals = data;
         });
     },
