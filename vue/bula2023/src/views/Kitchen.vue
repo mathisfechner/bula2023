@@ -35,6 +35,7 @@
           @click="like(meal.id)"
           class="vote"
           :class="{ selected: meal.vote }"
+          style="margin-bottom: -2rem;"
         >
           {{ "&#x02c4" }}
         </button>
@@ -43,6 +44,7 @@
           @click="dislike(meal.id)"
           class="vote"
           :class="{ selected: !meal?.vote && meal?.vote !== null }"
+          style="margin-top: -2rem;"
         >
           {{ "&#x02c5" }}
         </button>
@@ -312,7 +314,6 @@ button,
     button {
       .sketchyFont();
       font-size: 2.7rem;
-      height: 1.5rem;
       backdrop-filter: none;
       margin: 0;
       text-align: center;
