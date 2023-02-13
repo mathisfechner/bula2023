@@ -91,6 +91,30 @@
           />
         </g>
         <g
+          id="Kathedrale"
+          class="hoverArea"
+          @click="selectedArea = 'Kathedrale'"
+          transform="matrix(-0.0855715,0.470793,0.360145,0.0654601,2124.43,319)"
+        >
+          <path
+            :class="{ selected: selectedArea === 'Kathedrale' }"
+            d="M2203.79,2310.63C2260.25,2295.07 2572.92,2364.96 2581.18,2405.43C2597.01,2483.03 2510.65,2635.91 2470.2,2657.84C2411.91,2689.44 2127.84,2585.22 2075.37,2541.42C2039.34,2511.35 2145.19,2326.78 2203.79,2310.63Z"
+            style="fill: rgb(183, 73, 73)"
+          />
+        </g>
+        <g
+          id="Parkplatz"
+          class="hoverArea"
+          @click="selectedArea = 'Parkplatz'"
+          transform="matrix(-0.0855715,0.470793,0.360145,0.0654601,2897.43,1052.91)"
+        >
+          <path
+            :class="{ selected: selectedArea === 'Parkplatz' }"
+            d="M1682.72,2540.12C1650.76,2440.68 2225.7,1917.39 2592.27,1616C2767.29,1472.1 2862.46,1267.07 2897.87,1329.42C2964.1,1446.03 2470.54,2948.33 2430.09,2970.25C2371.8,3001.86 1725.91,2674.51 1682.72,2540.12Z"
+            style="fill: rgb(183, 73, 73)"
+          />
+        </g>
+        <g
           id="ersteHilfe"
           class="hoverArea"
           @click="selectedArea = 'ersteHilfe'"
@@ -99,6 +123,54 @@
           <path
             :class="{ selected: selectedArea === 'ersteHilfe' }"
             d="M2459.21,2270.76C2515.93,2268.12 2594.7,2419.55 2586.77,2467.6C2576.1,2532.22 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2318.19,2399.79 2322.28,2348.59C2326.31,2298.06 2406.3,2273.23 2459.21,2270.76Z"
+            style="fill: rgb(183, 73, 73)"
+          />
+        </g>
+        <g
+          id="Roverjurte"
+          class="hoverArea"
+          @click="selectedArea = 'Roverjurte'"
+          transform="matrix(0.398881,0.691622,-0.68922,0.397495,1044.18,-807.281)"
+        >
+          <path
+            :class="{ selected: selectedArea === 'Roverjurte' }"
+            d="M2459.21,2270.76C2547.3,2253.28 2625.66,2366.48 2586.77,2467.6C2563.26,2528.7 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2332.12,2473.6 2349.53,2395.64C2365.95,2322.05 2407.25,2281.08 2459.21,2270.76Z"
+            style="fill: rgb(183, 73, 73)"
+          />
+        </g>
+        <g
+          id="WhiteWings"
+          class="hoverArea"
+          @click="selectedArea = 'WhiteWings'"
+          transform="matrix(0.398881,0.691622,-0.68922,0.397495,3942.69,-1701.19)"
+        >
+          <path
+            :class="{ selected: selectedArea === 'WhiteWings' }"
+            d="M2459.21,2270.76C2547.3,2253.28 2625.66,2366.48 2586.77,2467.6C2563.26,2528.7 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2332.12,2473.6 2349.53,2395.64C2365.95,2322.05 2407.25,2281.08 2459.21,2270.76Z"
+            style="fill: rgb(183, 73, 73)"
+          />
+        </g>
+        <g
+          id="BulaKita"
+          class="hoverArea"
+          @click="selectedArea = 'BulaKita'"
+          transform="matrix(0.398881,0.691622,-0.68922,0.397495,4197.62,-1663.82)"
+        >
+          <path
+            :class="{ selected: selectedArea === 'BulaKita' }"
+            d="M2459.21,2270.76C2547.3,2253.28 2625.66,2366.48 2586.77,2467.6C2563.26,2528.7 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2332.12,2473.6 2349.53,2395.64C2365.95,2322.05 2407.25,2281.08 2459.21,2270.76Z"
+            style="fill: rgb(183, 73, 73)"
+          />
+        </g>
+        <g
+          id="Bronx"
+          class="hoverArea"
+          @click="selectedArea = 'Bronx'"
+          transform="matrix(0.398881,0.691622,-0.68922,0.397495,3985.23,-1372.89)"
+        >
+          <path
+            :class="{ selected: selectedArea === 'Bronx' }"
+            d="M2459.21,2270.76C2547.3,2253.28 2625.66,2366.48 2586.77,2467.6C2563.26,2528.7 2517.48,2551.41 2452.63,2538.06C2389.53,2525.07 2332.12,2473.6 2349.53,2395.64C2365.95,2322.05 2407.25,2281.08 2459.21,2270.76Z"
             style="fill: rgb(183, 73, 73)"
           />
         </g>
@@ -130,7 +202,7 @@
           id="Bühne"
           class="hoverArea"
           @click="selectedArea = 'Bühne'"
-          transform="matrix(0.997617,-0.567845,0.449402,0.78953,-889.734,1078.46)"
+          transform="matrix(0.732743,0.221678,-0.226795,0.657046,1419.49,-616.894)"
         >
           <path
             :class="{ selected: selectedArea === 'Bühne' }"
@@ -146,6 +218,18 @@
         >
           <path
             :class="{ selected: selectedArea === 'Taverne' }"
+            d="M2379.43,2134.3C2436.15,2131.66 2538.8,2236.43 2530.87,2284.47C2520.2,2349.09 2391.64,2405.43 2326.78,2392.09C2263.68,2379.1 2181.59,2264.02 2185.68,2212.82C2189.71,2162.28 2326.53,2136.77 2379.43,2134.3Z"
+            style="fill: rgb(183, 73, 73)"
+          />
+        </g>
+        <g
+          id="BMS"
+          class="hoverArea"
+          @click="selectedArea = 'BMS'"
+          transform="matrix(1.2995,0,0,0.475624,-1335.76,390.23)"
+        >
+          <path
+            :class="{ selected: selectedArea === 'BMS' }"
             d="M2379.43,2134.3C2436.15,2131.66 2538.8,2236.43 2530.87,2284.47C2520.2,2349.09 2391.64,2405.43 2326.78,2392.09C2263.68,2379.1 2181.59,2264.02 2185.68,2212.82C2189.71,2162.28 2326.53,2136.77 2379.43,2134.3Z"
             style="fill: rgb(183, 73, 73)"
           />
@@ -4713,6 +4797,30 @@
         >
           <h4>Küche</h4>
         </button>
+        <button
+          :class="{ selected: selectedArea === 'BMS' }"
+          @click.stop="select($event, 'BMS')"
+        >
+          <h4>BMS Marktstand</h4>
+        </button>
+        <button
+          :class="{ selected: selectedArea === 'BulaKita' }"
+          @click.stop="select($event, 'BulaKita')"
+        >
+          <h4>BuLa-Kita</h4>
+        </button>
+        <button
+          :class="{ selected: selectedArea === 'Bronx' }"
+          @click.stop="select($event, 'Bronx')"
+        >
+          <h4>BronX</h4>
+        </button>
+        <button
+          :class="{ selected: selectedArea === 'Parkplatz' }"
+          @click.stop="select($event, 'Parkplatz')"
+        >
+          <h4>Parkplatz</h4>
+        </button>
       </div>
       <div class="box">
         <button
@@ -4734,10 +4842,28 @@
           <h4>Fahnenmast</h4>
         </button>
         <button
+          :class="{ selected: selectedArea === 'Kathedrale' }"
+          @click.stop="select($event, 'Kathedrale')"
+        >
+          <h4>Kathedrale</h4>
+        </button>
+        <button
+          :class="{ selected: selectedArea === 'WhiteWings' }"
+          @click.stop="select($event, 'WhiteWings')"
+        >
+          <h4>Quastorium</h4>
+        </button>
+        <button
           :class="{ selected: selectedArea === 'Taverne' }"
           @click.stop="select($event, 'Taverne')"
         >
           <h4>Taverne</h4>
+        </button>
+        <button
+          :class="{ selected: selectedArea === 'Roverjurte' }"
+          @click.stop="select($event, 'Roverjurte')"
+        >
+          <h4>Roverjurte</h4>
         </button>
       </div>
     </div>

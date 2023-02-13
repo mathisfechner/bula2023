@@ -25,7 +25,6 @@
       <label :for="'input-mail-kitchen'">e-Mail Adresse</label>
       <button @click="onMailEntered()">Abstimmen</button>
     </div>
-
     <div v-for="meal in meals" :key="meal.id" class="meal">
       <div>
         <h4>{{ meal.title }}</h4>
@@ -37,15 +36,15 @@
           class="vote"
           :class="{ selected: meal.vote }"
         >
-          {{ "<" }}
+          {{ "˄" }}
         </button>
         <p class="count">{{ meal.count }}</p>
         <button
           @click="dislike(meal.id)"
           class="vote"
-          :class="{ selected: !mail?.vote && mail?.vote != null }"
+          :class="{ selected: !meal?.vote && meal?.vote !== null }"
         >
-          {{ ">" }}
+          {{ "˅" }}
         </button>
       </div>
     </div>
@@ -312,7 +311,9 @@ button,
     p,
     button {
       .sketchyFont();
-      font-size: 1.5rem;
+      font-size: 2.7rem;
+      height: 1.5rem;
+      backdrop-filter: none;
       margin: 0;
       text-align: center;
       background-color: transparent;
@@ -327,7 +328,7 @@ button,
     }
 
     .vote {
-      transform: rotate(90deg);
+      //transform: rotate(90deg);
     }
   }
 }

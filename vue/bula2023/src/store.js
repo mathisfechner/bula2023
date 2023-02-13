@@ -556,6 +556,18 @@ let Store = reactive({
     Fahnenmast: "Hier versammelt sich das BuLa zur Morgen- und zur Abendwache.",
     Taverne:
       "Das Zentrum der BuLa-Mitarbeitenden: Hier finden morgens die Treffen der Kochgruppenleitungen statt und auch ansonsten wird hier fleißig am BuLa gearbeitet.",
+    Roverjurte:
+      "Mal für Rover, mal für Ältere und mal für alle ab 17 - vor allem für die, die gerne singen und quatschen.",
+    BMS: "Hier kannst du nach Herzenslust Hemden, T-Shirts und diverse Pfadiartikel aus der Bundesmaterialstelle der BPS shoppen.",
+    Kathedrale:
+      "Ein Ort voll Pomp und Prunk! Der Kaiser hat unsere drei Ritterorden beauftragt, gemeinsam daran zu arbeiten.",
+    WhiteWings:
+      "In der großen weißen Jurte kannst du zur Ruhe kommen, beten und Seelsorge in Anspruch nehmen.",
+    BulaKita:
+      "TaBULArasa - der Name ist Programm! Alle Kids, die zu jung fürs Programm sind, werden hier von unserem Kita-Team betreut.",
+    Bronx:
+      "Das allererste Trainingscamp für die Bronzelilie. Neun Tage für ein Abzeichen, das du schon immer mal machen wolltest... Nimmst du die Herausforderung an?",
+    Parkplatz: "Für dein Auto, Mofa, E-Roller, U-Boot oder Fliwatüüt.",
   },
   Sponsoren: [],
 });

@@ -61,7 +61,7 @@ router.post("/likemeal/:id/:mail", async function (req, res, next) {
       minus: meal.minus.filter((mail) => mail != req.params.mail.toLowerCase()),
     })
   );
-  return res.json(await getMeals(req.params.mail));
+  return res.json(await getMeals(req, req.params.mail));
 });
 
 router.post("/dislikemeal/:id/:mail", async function (req, res, next) {
@@ -76,7 +76,28 @@ router.post("/dislikemeal/:id/:mail", async function (req, res, next) {
         .concat([req.params.mail.toLowerCase()]),
     })
   );
-  return res.json(await getMeals(req.params.mail));
+  return res.json(await getMeals(req, req.params.mail));
+});
+
+router.get("/delete/meal/with/:id", async function (req, res, next) {
+  await req.kitchenDB.del(req.params.id);
+  return res.json(await getMeals(req));
+});
+
+router.get("/count/votes", async function (req, res, next) {
+  var values = await req.kitchenDB.values().all();
+  var adresses = [];
+  values
+    .map((element) => JSON.parse(element))
+    .forEach((meal) => {
+      meal.plus.concat(meal.minus).forEach((adress) => {
+        if (!adresses.includes(adress)) adresses.push(adress);
+      });
+    });
+  return res.json({
+    count: adresses.length,
+    adresses: adresses,
+  });
 });
 
 module.exports = router;
