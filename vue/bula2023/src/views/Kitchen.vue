@@ -36,7 +36,7 @@
           class="vote"
           :class="{ selected: meal.vote }"
         >
-          {{ "˄" }}
+          {{ "&#x02c4" }}
         </button>
         <p class="count">{{ meal.count }}</p>
         <button
@@ -44,7 +44,7 @@
           class="vote"
           :class="{ selected: !meal?.vote && meal?.vote !== null }"
         >
-          {{ "˅" }}
+          {{ "&#x02c5" }}
         </button>
       </div>
     </div>
