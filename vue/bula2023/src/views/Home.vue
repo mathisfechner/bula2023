@@ -2,6 +2,8 @@
   <main>
     <countdown></countdown>
     <willkommen></willkommen>
+    <h2>BuLa Song</h2>
+    <bula-song></bula-song>
     <h2 @click="$router.push('/team')" class="linkingHeadline">Team</h2>
     <team :team="store.Team"></team>
     <h2 @click="$router.push('/faq')" class="linkingHeadline">FAQ</h2>
@@ -68,6 +70,7 @@ import faq from "../components/faqs.vue";
 import BuLaHeader from "../components/buLaHeader.vue";
 import Jobs from "../components/jobs.vue";
 import BuLaMap from "../components/map.vue";
+import bulaSong from "../components/bulaSong.vue";
 
 export default {
   components: {
@@ -78,6 +81,7 @@ export default {
     BuLaHeader,
     Jobs,
     BuLaMap,
+    bulaSong,
   },
   mixins: [mixin],
   computed: {},

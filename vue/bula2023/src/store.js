@@ -3,7 +3,7 @@ import { Fragment, reactive } from "vue";
 let Store = reactive({
   i18n: {
     willkommen: [
-      "Nach zwei Jahren Pandemie hast du genug davon, in deinem Zimmer vorm Computer zu hocken? Du willst endlich wieder raus? Abenteuer erleben? Pfadfinder aus anderen Stämmen kennenlernen? Neue Freunde finden? Bis tief in die Nacht singen? Beim Großen Spiel dein Bestes geben? Mit dem ganzen BuLa Gottesdienst feiern? Deiner Kreativität in Workshops und bei Lagerbauten freien Lauf lassen?",
+      "Du willst endlich wieder raus? Abenteuer erleben? Pfadfinder aus anderen Stämmen kennenlernen? Neue Freunde finden? Bis tief in die Nacht singen? Beim Großen Spiel dein Bestes geben? Mit dem ganzen BuLa Gottesdienst feiern? Deiner Kreativität in Workshops und bei Lagerbauten freien Lauf lassen?",
       "Wenn du auch nur eine dieser Fragen mit „Ja!“ beantwortet hast, bist du auf dieser Website genau richtig – und noch viel mehr auf dem nächsten Bundeslager der <a href='https://bps-pfadfinder.de' target='blank'>BPS</a>! Stattfinden wird es vom 29. Juli bis zum 06. August 2023 in Reinwarzhofen. Wir freuen uns auf dich!",
     ],
   },
@@ -391,48 +391,48 @@ let Store = reactive({
     },
   },
   Jobs: {
-    "SCHREIBEN UND GESTALTEN": [
-      {
-        title: "Mitarbeitende für das Team „Redaktionelles“",
-        description:
-          "Egal ob Rüstbrief, Lagerheft oder Texte für die Website - wir brauchen Menschen, die Spaß daran haben, sich auszudrücken und mit Wörtern zu spielen. Es wäre gut, wenn in diesem Bereich bereits Erfahrungen gesammelt wurden, damit sich der Korrekturaufwand in Grenzen hält.",
-        efford:
-          "Eure Mithilfe wird vor dem Lager benötigt – auf dem Lager selbst habt ihr frei.",
-        contact: "Melisa",
-      },
-      {
-        title: "Mitarbeitende für das Instagram-Team",
-        description:
-          "Du bist gerne in den sozialen Medien unterwegs und hast Spaß daran, dir kreative Texte auszudenken, langfristig zu planen und unseren BuLa-Account zu bespielen? Dann ist das genau die richtige Aufgabe für dich.",
-        efford:
-          "Vor und/oder auf dem Lager – je mehr mitmachen, desto besser können wir die Arbeit aufteilen.",
-        contact: "Theresa",
-      },
-      {
-        title: "Comiczeichner/Comiczeichnerin",
-        description:
-          "Sowohl vor dem BuLa als währenddessen würden wir die verschiedenen Unterlagen gerne mit lustigen, kunstvollen Bildern schmücken. Wenn du zeichnen kannst und Spaß daran hast, melde dich gerne, wir freuen uns auf tolle Comics und Bilder.",
-        efford:
-          "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
-        contact: "Rike",
-      },
-      {
-        title: "Erarbeitung von Sippenstundenentwürfen",
-        description:
-          "Du hast kreative Ideen für Sippenstunden, mit denen wir im Vorfeld des BuLas Jupfis und Pfadis auf das BuLa-Thema einstimmen können? Du hast Spaß daran, daraus Stundenentwürfe für unterschiedliche Altersstufen zu entwickeln? Dann werde aktiv und hilf mit bei der Erarbeitung von Sippenstundenentwürfen! Damit es nicht zu viel für eine Person wird, planen wir, diese Aufgabe auf mehrere Schultern zu verteilen.",
-        efford:
-          "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
-        contact: "Melisa",
-      },
-      {
-        title: "Ausarbeitung der Andachten",
-        description:
-          "Das Andachtskonzept fürs BuLa hat unser Team für den geistlichen Teil schon erarbeitet – jetzt brauchen sie noch Unterstützung bei der Ausarbeitung der Andachten fürs Lagerheft. Du hast Lust, die Ausarbeitung für einen Lagertag zu übernehmen? Dann werde Teil des Teams und trage mit dazu bei, dass die Arbeit auf vielen Schultern verteilt wird!",
-        efford:
-          "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
-        contact: "Theresa",
-      },
-    ],
+    // "SCHREIBEN UND GESTALTEN": [
+    //   // {
+    //   //   title: "Mitarbeitende für das Team „Redaktionelles“",
+    //   //   description:
+    //   //     "Egal ob Rüstbrief, Lagerheft oder Texte für die Website - wir brauchen Menschen, die Spaß daran haben, sich auszudrücken und mit Wörtern zu spielen. Es wäre gut, wenn in diesem Bereich bereits Erfahrungen gesammelt wurden, damit sich der Korrekturaufwand in Grenzen hält.",
+    //   //   efford:
+    //   //     "Eure Mithilfe wird vor dem Lager benötigt – auf dem Lager selbst habt ihr frei.",
+    //   //   contact: "Melisa",
+    //   // },
+    //   {
+    //     title: "Mitarbeitende für das Instagram-Team",
+    //     description:
+    //       "Du bist gerne in den sozialen Medien unterwegs und hast Spaß daran, dir kreative Texte auszudenken, langfristig zu planen und unseren BuLa-Account zu bespielen? Dann ist das genau die richtige Aufgabe für dich.",
+    //     efford:
+    //       "Vor und/oder auf dem Lager – je mehr mitmachen, desto besser können wir die Arbeit aufteilen.",
+    //     contact: "Theresa",
+    //   },
+    //   {
+    //     title: "Comiczeichner/Comiczeichnerin",
+    //     description:
+    //       "Sowohl vor dem BuLa als währenddessen würden wir die verschiedenen Unterlagen gerne mit lustigen, kunstvollen Bildern schmücken. Wenn du zeichnen kannst und Spaß daran hast, melde dich gerne, wir freuen uns auf tolle Comics und Bilder.",
+    //     efford:
+    //       "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
+    //     contact: "Rike",
+    //   },
+    //   {
+    //     title: "Erarbeitung von Sippenstundenentwürfen",
+    //     description:
+    //       "Du hast kreative Ideen für Sippenstunden, mit denen wir im Vorfeld des BuLas Jupfis und Pfadis auf das BuLa-Thema einstimmen können? Du hast Spaß daran, daraus Stundenentwürfe für unterschiedliche Altersstufen zu entwickeln? Dann werde aktiv und hilf mit bei der Erarbeitung von Sippenstundenentwürfen! Damit es nicht zu viel für eine Person wird, planen wir, diese Aufgabe auf mehrere Schultern zu verteilen.",
+    //     efford:
+    //       "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
+    //     contact: "Melisa",
+    //   },
+    //   {
+    //     title: "Ausarbeitung der Andachten",
+    //     description:
+    //       "Das Andachtskonzept fürs BuLa hat unser Team für den geistlichen Teil schon erarbeitet – jetzt brauchen sie noch Unterstützung bei der Ausarbeitung der Andachten fürs Lagerheft. Du hast Lust, die Ausarbeitung für einen Lagertag zu übernehmen? Dann werde Teil des Teams und trage mit dazu bei, dass die Arbeit auf vielen Schultern verteilt wird!",
+    //     efford:
+    //       "Deine Hilfe wird vor dem Lager benötigt, auf dem Lager hast du frei.",
+    //     contact: "Theresa",
+    //   },
+    // ],
     PROGRAMM: [
       {
         title: "Singewettstreit",
@@ -480,12 +480,27 @@ let Store = reactive({
       // },
     ],
     "DIES UND DAS RUND UMS LAGER": [
+      // {
+      //   title: "Mitarbeitende in der BuLa-Kita",
+      //   description:
+      //     "Erstmals wird es eine BuLa-Kita geben, für die wir noch Mitarbeitende suchen. Wenn du eine pädagogische Ausbildung hast, wäre das natürlich super, aber auch, wenn du einfach Spaß an der Arbeit mit kleinen Kindern hast, bist du willkommen im Team. Zu welchen Zeiten und für welche Altersgruppen die BuLa-Kita offen hat, wird festgelegt, sobald der Bedarf klar ist.",
+      //   efford:
+      //     "Abgesehen von einer digitalen Vorbesprechung: auf dem Lager. Die Schichten werden so eingeteilt, dass ihr auch euren sonstigen Verpflichtungen nachgehen könnt.",
+      //   contact: "Melisa",
+      // },
       {
-        title: "Mitarbeitende in der BuLa-Kita",
+        titel: "Mitarbeitende fürs Technik-Team",
         description:
-          "Erstmals wird es eine BuLa-Kita geben, für die wir noch Mitarbeitende suchen. Wenn du eine pädagogische Ausbildung hast, wäre das natürlich super, aber auch, wenn du einfach Spaß an der Arbeit mit kleinen Kindern hast, bist du willkommen im Team. Zu welchen Zeiten und für welche Altersgruppen die BuLa-Kita offen hat, wird festgelegt, sobald der Bedarf klar ist.",
+          "Ob beim Eröffnungsabend, während der Gottesdienste oder beim Singewettstreit: Alle sollen gut hören können, was vorne auf der Bühne passiert. Dafür sorgt auf dem BuLa das Technik-Team. Wenn du dich mit Ton-Technik auskennst und bei den Großveranstaltungen eine wichtige Rolle spielen willst, ohne selbst auf der Bühne zu stehen, bist du hier richtig!",
         efford:
-          "Abgesehen von einer digitalen Vorbesprechung: auf dem Lager. Die Schichten werden so eingeteilt, dass ihr auch euren sonstigen Verpflichtungen nachgehen könnt.",
+          "Vorbesprechung vor dem BuLa mit den anderen Team-Mitgliedern. Auf dem BuLa bei einem Teil der Großveranstaltungen und evtl. bei Proben - ihr könnt im Team selbst aufteilen, wer wann an der Reihe ist",
+        contact: "Theresa",
+      },
+      {
+        titel: "Mitarbeitende in der Küche",
+        description:
+          "Was ist insgeheim auf einem Lager viel wichtiger als das Programm? Natürlich das Essen! Wenn ihr mithelfen wollt, dass jeder davon ausreichend bekommt, indem ihr beim Ausladen, Aufteilen und Ausgeben mitanpackt, seid ihr im Küchen-Team genau richtig am Platz!",
+        efford: "Quasi keiner vor dem Lager, auf dem Lager variabel.",
         contact: "Melisa",
       },
       {
@@ -520,14 +535,14 @@ let Store = reactive({
           "Vorbereitung im Vorfeld des Lagers, ansonsten vor allem während des Lagers",
         contact: "Rike",
       },
-      {
-        title: "Schauspiel-Team",
-        description:
-          "Eine Leitung für das Schauspiel-Team ist wichtig. Aber in den Showacts gibt es mehr als nur eine Rolle. Deshalb suchen wir motivierte Pfadis, die Lust haben, auf der Bühne in andere Rollen zu schlüpfen und die Geschichte für die Kinder erlebbar zu machen.",
-        efford:
-          "Vorbereitung im Vorfeld des Lagers, ansonsten vor allem während des Lagers.",
-        contact: "Melisa",
-      },
+      // {
+      //   title: "Schauspiel-Team",
+      //   description:
+      //     "Eine Leitung für das Schauspiel-Team ist wichtig. Aber in den Showacts gibt es mehr als nur eine Rolle. Deshalb suchen wir motivierte Pfadis, die Lust haben, auf der Bühne in andere Rollen zu schlüpfen und die Geschichte für die Kinder erlebbar zu machen.",
+      //   efford:
+      //     "Vorbereitung im Vorfeld des Lagers, ansonsten vor allem während des Lagers.",
+      //   contact: "Melisa",
+      // },
       // {
       //   title: "Organisation der Nachtwachen",
       //   description:
