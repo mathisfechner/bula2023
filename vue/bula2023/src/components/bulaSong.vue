@@ -51,7 +51,9 @@
       </div>
     </div>
   </div>
-  <a href="Liedzettel.pdf" download><button>Liedtext runterladen</button></a>
+  <a target="_blank" href="Liedzettel.pdf" download
+    ><button>Liedtext runterladen</button></a
+  >
 </template>
 
 <script>
