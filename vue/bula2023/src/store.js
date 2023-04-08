@@ -489,7 +489,7 @@ let Store = reactive({
       //   contact: "Melisa",
       // },
       {
-        titel: "Mitarbeitende fürs Technik-Team",
+        title: "Mitarbeitende fürs Technik-Team",
         description:
           "Ob beim Eröffnungsabend, während der Gottesdienste oder beim Singewettstreit: Alle sollen gut hören können, was vorne auf der Bühne passiert. Dafür sorgt auf dem BuLa das Technik-Team. Wenn du dich mit Ton-Technik auskennst und bei den Großveranstaltungen eine wichtige Rolle spielen willst, ohne selbst auf der Bühne zu stehen, bist du hier richtig!",
         efford:
@@ -497,7 +497,7 @@ let Store = reactive({
         contact: "Theresa",
       },
       {
-        titel: "Mitarbeitende in der Küche",
+        title: "Mitarbeitende in der Küche",
         description:
           "Was ist insgeheim auf einem Lager viel wichtiger als das Programm? Natürlich das Essen! Wenn ihr mithelfen wollt, dass jeder davon ausreichend bekommt, indem ihr beim Ausladen, Aufteilen und Ausgeben mitanpackt, seid ihr im Küchen-Team genau richtig am Platz!",
         efford: "Quasi keiner vor dem Lager, auf dem Lager variabel.",
@@ -519,14 +519,14 @@ let Store = reactive({
           "Kurze Vorbereitung vor dem Lager. An einzelnen Tagen auf dem Lager. Je mehr Menschen mitmachen, desto seltener bist du dran.",
         contact: "Melisa",
       },
-      {
-        title: "Team für den Hindernis-Spenden-Lauf",
-        description:
-          "Auf dem Lager wird es einen Hindernis-Spenden-Lauf geben, der sich nur als ganze Sippe bewältigen lassen soll. Für jede Sippe, die den Lauf erfolgreich absolviert, werden unsere Sponsoren an ein Projekt spenden. Wir suchen ein Team, dass den Hindernis-Parcours aufbaut und organisiert. Da die Sippen über das Lager verteilt in ihrer freien Zeit teilnehmen können sollen, werdet ihr bei der Betreuung – soweit gewünscht – vom Rover-Bereitschaftsdienst unterstützt.",
-        efford:
-          "Planung des Konzepts vor dem Lager, ansonsten vor allem auf dem Lager. Aufbau während des Vorlagers wünschenswert, aber kein Muss.",
-        contact: "Theresa",
-      },
+      // {
+      //   title: "Team für den Hindernis-Spenden-Lauf",
+      //   description:
+      //     "Auf dem Lager wird es einen Hindernis-Spenden-Lauf geben, der sich nur als ganze Sippe bewältigen lassen soll. Für jede Sippe, die den Lauf erfolgreich absolviert, werden unsere Sponsoren an ein Projekt spenden. Wir suchen ein Team, dass den Hindernis-Parcours aufbaut und organisiert. Da die Sippen über das Lager verteilt in ihrer freien Zeit teilnehmen können sollen, werdet ihr bei der Betreuung – soweit gewünscht – vom Rover-Bereitschaftsdienst unterstützt.",
+      //   efford:
+      //     "Planung des Konzepts vor dem Lager, ansonsten vor allem auf dem Lager. Aufbau während des Vorlagers wünschenswert, aber kein Muss.",
+      //   contact: "Theresa",
+      // },
       {
         title: "Leitung Schauspiel-Team",
         description:

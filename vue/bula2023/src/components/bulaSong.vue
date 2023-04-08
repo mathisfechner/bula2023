@@ -54,6 +54,12 @@
   <a target="_blank" href="Liedzettel.pdf" download
     ><button>Liedtext runterladen</button></a
   >
+  <a target="_blank" href="Noten.pdf" download
+    ><button>Noten runterladen</button></a
+  >
+  <a target="_blank" href="Bula 2023_Ex tribus unum.mid" download
+    ><button>Midi Datei runterladen</button></a
+  >
 </template>
 
 <script>
