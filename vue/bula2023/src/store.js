@@ -301,6 +301,11 @@ let Store = reactive({
             answer: "Ja, auf unseren Lagern zahlen alle den Teilnehmerbeitrag.",
           },
           {
+            question: "Ab wann kann die An- bzw. Abreise erfolgen?",
+            answer:
+              "Die Anreise ist ab 12 Uhr möglich, die Abreise frühestens ab 11 Uhr",
+          },
+          {
             question:
               "Ist die Anreise mit öffentlichen Verkehrsmitteln möglich?",
             answer:
